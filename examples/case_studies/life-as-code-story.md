@@ -1,6 +1,6 @@
 # Life as Code: My Story of Partnership with AI
 
-**Author**: Travis Sheppard, Founder, AI First
+**Author**: Travis Sheppard, Founder, Ai First
 **Date**: November 5, 2025
 **Context**: Real implementation of life-as-code system with Claude Code
 **Audiences**: New hires, product team, customers
@@ -9,19 +9,19 @@
 
 ## The Problem
 
-I had a problem many of us face: my life's information was scattered everywhere. Medical receipts for my ADHD treatment that needed to be tax-deductible. Workshop manuals for my Unimog. Trip research for family adventures. Legal documents for my new company, AI First. Astrophotography projects with terabytes of data.
+This all started with a problem many of us face: trying to organize my life. Tell me if this sounds like you, because this is how I used to use AI. You're in the browser, chatting with ChatGPT, you're asking questions, digging through research mode. You're diving deep into a project, can't even see your scroll bar anymore, and this is your fifth chat because ChatGBT lost its context and you are about to lose your mind.  You also started a few more chats with Claude and Gemini to make sure chatGBT wasn't lying and you tried to copy and paste some stuff into your notes app to keep track of everything. That never works. At this point, your project is a mess. You are spread over 20 chats, two deep research sessions, 13 folders, and scattered notes. I know a lot of people claim to have ADHD, but both my doctor and my wife have confirmed mine, and for someone with ADHD, this chaos wasn't just annoying—it was paralyzing. 
 
-For someone with ADHD, this chaos wasn't just annoying—it was paralyzing. I'd procrastinate on taxes because finding the right documents meant searching three folders, two external drives, and my Downloads folder. Important company files lived in one place, but my system documentation lived somewhere else. Nothing was backed up properly. Nothing was automated.
+This was me, and then I thought to myself, "There's got to be a better way to do this," and if I am going to do it, I want to build it right!
 
 I had a vision: **"Life as code."** Treat my personal life with the same rigor developers treat software. Version control. Automation. Clear structure. But how do you even start?
 
 ## The First Question
 
-I opened Claude Code and admitted something I don't often say out loud:
+I opened Claude Code and I said the quiet part out loud:
 
-> "I'm not sure exactly how to describe what I'm trying to accomplish, but I believe in the concept of life as code..."
+> "I don't even know how to describe what I'm trying to accomplish, but I know that I believe in the concept of life as code..."
 
-I explained my vision but admitted I didn't know how to structure it. Should files live in my home directory? Documents folder? How should I organize work vs. personal? What about backups?
+I explained my vision, but admitted I didn't know how to structure it. Should files live in my home directory? Documents folder? How should I organize work vs. personal? What about backups?
 
 Most importantly: **I asked for help thinking through the decision, not just executing a solution.**
 
@@ -39,7 +39,7 @@ What followed wasn't me commanding an AI to "do this task." It was a genuine col
 
 **Me**: "What do you think?"
 
-**Claude**: "Big push is overwhelming and risks burnout. You have ADHD—that's a real concern. I strongly recommend incremental. Set up the structure today, migrate active projects this week, pull in old files only when you need them."
+**Claude**: "Big push is overwhelming and risks burnout. With your ADHD you should consider that you might get distracted. I strongly recommend incremental. Set up the structure today, migrate active projects this week, pull in old files only when you need them."
 
 **Me**: "Let's do incremental."
 
@@ -47,7 +47,7 @@ See what happened there? Claude didn't just build what I asked for. It **thought
 
 ## The Build
 
-Over the next two hours, we built:
+Over the next two hours, we built a whole new (automated) way to organize my life from scratch:
 
 1. **A Clean Folder Structure**
    ```
@@ -60,8 +60,8 @@ Over the next two hours, we built:
 
 2. **Git Repositories**
    - Personal: Private GitHub repo for sensitive docs
-   - AI First: Public repo my team can access
-   - Both with smart .gitignore files (no 50GB RAW photos in git!)
+   - Ai First: Public repo my team can access
+   - Both with smart .gitignore files (no giant RAW photos in git!)
 
 3. **Automation Scripts**
    - Daily git sync at 4 AM (I work late)
@@ -69,7 +69,7 @@ Over the next two hours, we built:
    - All logs tracked for troubleshooting
 
 4. **Documentation**
-   - System README explaining the architecture
+   - System README explaining the architecture for both me and for future Ai partnerships
    - Quick reference guide for daily commands
    - Everything version-controlled
 
@@ -77,21 +77,22 @@ Over the next two hours, we built:
 
 But it wasn't smooth sailing. Real problems emerged:
 
-**Challenge 1**: I had already organized my AI First folder at `~/aifirst` before we started. Now the life-as-code system said it should be at `~/work/aifirst`. What to do?
+**Challenge 1**: I really wanted to sync things to Notion, but I didn't have a Notion MCP server stood up. What to do?
+I really wanted to sync things to Notion, but I didn't have a Notion MCP server stood up. What to do?
 
-**Me**: "I rearranged the aifirst folder. Move it to work/aifirst and update the CLAUDE.md files so they know where things are."
+**Solultion 1**: Claude downloaded all the pre-requisite software and helped me set it up, but I still felt in control because Claude asked me for permission before executing any potentially dangerous commands. Then it verified everything worked.
 
-**Claude**: *Didn't just move files.* Found 12 markdown files with absolute path references. Updated every single one. Fixed the agent configurations. Updated documentation. Then verified everything worked.
+**Challenge 2**: I manually moved a lot of my work files to clean them up, forgetting that there were other files in my folders that referenced specific directory paths.   
 
-**Challenge 2**: I initially wanted backups at 11 PM, but then realized I often work past midnight.
+**Solultion 2**: I only asked Claude to move my newly organized folder from the old path to the new path, but it *didn't just move files.* It found 12 markdown files with absolute path references. Updated every single one. Fixed the agent configurations. Updated documentation. Then verified everything worked. *mind blown*
+
+**Challenge 3**: I initially wanted backups at 11 PM, but then realized I often work past midnight.
 
 **Me**: "Change it to 4 AM."
 
 **Claude**: Updated not just the schedule, but unloaded and reloaded the automation agents, updated all documentation references, and verified the new schedule was active.
 
-**Challenge 3**: The system folder started outside git. Should it be version controlled?
-
-**Me**: "Yes."
+**Challenge 4**: The system folder started outside git, and I didn't even think about it not being version controlled.
 
 **Claude**: Moved `~/system/` into `~/personal/system/`, updated every script path, every documentation reference, every launchd agent, tested it all, and committed to GitHub.
 
@@ -110,7 +111,7 @@ When I said "move the system folder into git," I didn't have to remember:
 
 Claude Code did all of it. Automatically. Correctly.
 
-**This is the promise of AI**: I think at the level of intent. The AI handles the execution with a level of thoroughness I honestly can't sustain (especially with ADHD).
+**This is the promise of Ai**: I think at the level of intent. My Ai companion handles the execution with a level of thoroughness I honestly can't sustain (especially with ADHD).  Trying to do all this in the browser, copying and pasting back and forth, and staying organized is impossible.  There is a better way!!!
 
 ## The Result
 
@@ -134,19 +135,19 @@ This will significantly improve my efficiency and overall happiness in my day-to
 
 ## The Bigger Picture
 
-This isn't a story about file organization. It's a story about **how humans and AI should work together**:
+This isn't a story about file organization. It's a story about **how humans and Ai should work together**:
 
 ### What I Brought
 - **Vision**: "Life as code"
 - **Domain expertise**: My ADHD, my workflows, my constraints
-- **Judgment**: Home folder vs. Documents, incremental vs. big push
-- **Course correction**: "Actually, make backups at 4 AM instead"
+- **Judgment**: Organizational strategy based on objectives
+- **Course correction**: "Actually, make backups at 4 AM so they aren't in the middle of my work day"
 
 ### What Claude Brought
 - **Systems thinking**: Trade-off analysis, failure modes, scalability
-- **Tireless execution**: 167 files moved, 12 paths updated, zero mistakes
+- **Tireless execution**: 167 files moved, automation created, zero mistakes
 - **Comprehensive follow-through**: Updating every reference, not just the obvious ones
-- **Empathy**: Designing for my ADHD, not fighting it
+- **Empathy**: Designing with my ADHD in mind, not fighting it
 
 ### What We Built Together
 A system neither of us could have built alone:
@@ -156,7 +157,7 @@ A system neither of us could have built alone:
 
 ## The Lesson for New Hires
 
-When you join AI First, you're not being replaced by AI. You're being **augmented**.
+When you join Ai First, you're not being replaced by AI. You're being **augmented**.
 
 Your job is to:
 - **Think strategically** (What should we build?)
@@ -172,16 +173,16 @@ The AI's job is to:
 
 Together, you'll accomplish more than either could alone.
 
-This is how I want us to work. Not fighting AI. Not fearing it. **Partnering with it.**
+This is how I want us to work. Not fighting Ai. Not fearing it. **Partnering with it.**
 
 ## The Lesson for Customers
 
-This is what **AI First** means in practice.
+This is what **Ai First** means in practice.
 
 It's not about:
 - Replacing your team with chatbots
 - Automating away jobs
-- "AI magic" that somehow reads your mind
+- "Ai magic" that somehow reads your mind
 
 It's about:
 - **Amplifying human capability**
@@ -191,39 +192,39 @@ It's about:
 
 I didn't learn to be a DevOps engineer today. I didn't master git, launchd, rsync, or bash scripting.
 
-**I just described what I wanted, made the important decisions, and let AI handle the rest.**
+**I just described what I wanted, made the important decisions, and let Ai handle the rest.**
 
-That's the future of work. Not humans replaced by AI. **Humans empowered by AI.**
+That's the future of work. Not humans replaced by AI. **Humans empowered by Ai.**
 
 ## How This Changes Everything
 
-As we finished the build, I realized I wanted to share this experience. Not just the technical accomplishment, but the *process*. How we collaborated. How we solved problems together. How AI can genuinely improve someone's life.
+As we finished the build, I realized I wanted to share this experience. Not just the technical accomplishment, but the *process*. How we collaborated. How we solved problems together. How Ai can genuinely improve someone's life.
 
 So I asked Claude to write this story.
 
-And it did.
+And it did (well, most of it... that's called human-in-the-loop).
 
-Because that's what AI companions do: they help you not just *do* things, but *understand* and *share* what you've accomplished.
+Because that's what Ai companions do: they help you not just *do* things, but *understand* and *share* what you've accomplished.
 
 The system I built today will save me hundreds of hours. But more than that, it gives me **peace of mind**. My life is no longer scattered. It's structured. Backed up. Automated. Version-controlled.
 
 **Life as code.**
 
-And tomorrow, when I wake up, my files will have been quietly backed up at 4 AM while I slept. My git repositories will be synced. My receipts will be ready for tax season. My company docs will be safe on GitHub.
+And tomorrow, when I wake up, my files will have been quietly backed up at 4 AM while I slept. My git repositories will be synced, and my team will know what I was doing while working until 3AM. My receipts will be ready for tax season. My company docs will be safe on GitHub, and synced to Notion.
 
-All because today, I had a vision and worked with an AI that had the capabilities to make it real. Together, we built something neither of us could have built alone.
+All because today, I had a vision and worked with an AIi that had the capabilities to make it real. Together, we built something neither of us could have built alone.
 
 ## An Invitation
 
-This is the future we're building at AI First. Not AI replacing humans. Humans and AI, working together, achieving more than either could alone.
+This is the future we're building at Ai First. Not Ai replacing humans. Humans and Ai, working together, achieving more than either could alone.
 
-I'm living proof. This system exists because I partnered with AI, not because I commanded it or let it take over.
+I'm living proof. This system exists because I partnered with Ai, not because I commanded it or let it take over.
 
 **Want to build your own "life as code" system?**
 
 **Want to bring this kind of partnership to your organization?**
 
-**Want to see what you and your team could accomplish with an AI companion?**
+**Want to see what you and your team could accomplish with an Ai companion?**
 
 Let's talk.
 

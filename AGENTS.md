@@ -11,13 +11,19 @@ Purpose
 Project Overview
 - Project: Ai First — proactive AI coaching platform embedded in daily workflows to drive AI adoption and transformation.
 - Mission: Turn AI investment into human capability and measurable ROI by changing how people think and work with AI.
+- Git Repository: https://github.com/nomadonwheels196/aifirst (public, team-shared)
+- Location: `~/work/aifirst/` (part of life-as-code system)
 - Structure:
-  - `specs/` — Company strategy and specifications (source of truth; see `specs/core/`).
-  - `ai-first-site/` — Static website (semantic HTML + Pico.css; served by Nginx via Docker).
-  - `Training Content/` — AI training materials and course content.
+  - `business_spec/` — Company strategy and specifications (source of truth)
+  - `business_ops/` — Business operations, legal, structure planning
+  - `examples/` — Real-world case studies demonstrating our approach
+  - `gtm/` — Go-to-market (marketing, sales, customer success)
+  - `people/` — Recruiting, onboarding, HR
+  - `product_management/` — Product specs, research, use cases
+  - `gtm/marketing/ai-first-site/` — Static website (semantic HTML + Pico.css; served by Nginx via Docker)
 
 Authoritative Specs
-- Primary references live in `specs/core/`:
+- Primary references live in `business_spec/`:
   - Ai First Company Spec.md
   - Mission.md
   - Product Strategy.md
@@ -28,6 +34,17 @@ Authoritative Specs
   - Boundaries and Gaurdrails.md
 - All material changes should link back to these specs and note rationale, impact, and author.
 
+Custom Claude Agents
+- Located in `.claude/agents/` directory
+- **case-study-extractor**: Transforms conversations/implementations into multi-audience case studies
+  - Extracts problem, process, solution, challenges, impact
+  - Creates canonical story + audience-specific analyses
+  - Uses symlinks for story distribution (not duplication)
+  - Follows Ai First style guide (conversational, vulnerable, concrete)
+  - Generates files in proper directory structure with cross-references
+- **clarity-review**: Comprehensive audit of markdown files for consistency and clarity
+- **legal-compliance-auditor**: Multi-jurisdictional legal compliance review (USA, Cayman, Spain/EU)
+
 Agent Usage
 - Follow the global AGENTS.md for tone (direct, candid, growth-focused) and privacy rules.
 - Use this file for project-specific rules, workflows, and runbooks.
@@ -35,10 +52,10 @@ Agent Usage
 
 Runbook — Website
 - Local run:
-  - `cd ai-first-site && docker compose up -d`
+  - `cd ~/work/aifirst/gtm/marketing/ai-first-site && docker compose up -d`
   - Access: `http://localhost:8080/`
-- Architecture: static HTML in `ai-first-site/site/`, served by Nginx (no build step).
-- Edit flow: modify files in `ai-first-site/site/`; test locally before deploy.
+- Architecture: static HTML in `site/`, served by Nginx (no build step).
+- Edit flow: modify files in `site/`; test locally before deploy.
 
 Development Principles
 - Values over bureaucracy: favor clarity and impact over ceremony.
@@ -52,14 +69,18 @@ Collaboration Conventions
 - Do not include secrets or personal data in this repo-level AGENTS.md; rely on the global file for personal profile.
 
 Security & Privacy
-- Treat `specs/business_structure/` and legal docs as sensitive; do not exfiltrate.
+- Treat `business_ops/legal/` as sensitive; do not exfiltrate confidential information.
 - Never commit credentials or tokens; use environment variables or secure stores.
-- If this directory becomes a git repo, review whether to `.gitignore` sensitive files and whether to include or exclude this AGENTS.md.
+- This is a git repository with automated daily backups (4 AM git sync, 4:30 AM NAS backup).
+- See `.gitignore` for files excluded from version control.
 
 Update Procedure
 - For project rules or runbooks: update in place with concise changes.
-- For strategy/product shifts: update the relevant spec in `specs/core/` and reference it here if needed.
+- For strategy/product shifts: update the relevant spec in `business_spec/` and reference it here if needed.
 - Avoid duplication with the global AGENTS.md; link or defer to it for personal profile and universal preferences.
+- When adding new agents to `.claude/agents/`, document them in the "Custom Claude Agents" section above.
 
 Notes
-- This directory is not a git repository at the time of writing. When initializing git, decide whether to include this file in version control or ignore it based on sensitivity.
+- This is an active git repository tracked at https://github.com/nomadonwheels196/aifirst
+- Automated backups run daily at 4:00 AM (git sync) and 4:30 AM (NAS backup)
+- For detailed system documentation, see `~/personal/system/docs/`
