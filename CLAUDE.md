@@ -4,8 +4,9 @@
 - **On Start:** Run `bash ~/.agents/session-open.sh $(pwd) "Claude Code"`
 - **Before Finish:** If you made changes to files:
   1. Review changes: `git status` and `git diff`
-  2. Commit them: `git add -A && git commit -m "Descriptive message"`
-  3. Reference related spec docs in commit messages when applicable
+  2. **Check what you're committing** - Verify no credentials, secrets, or PII are being added
+  3. Commit them: `git add -A && git commit -m "Descriptive message"`
+  4. Reference related spec docs in commit messages when applicable
 - **On Finish:** Run `bash ~/.agents/session-close.sh $(pwd) "Claude Code" "Your summary of what you did" "n"`
   - Write a concise summary of what you accomplished
   - Set last parameter to "y" if README.md needs updating

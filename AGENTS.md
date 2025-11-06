@@ -18,7 +18,8 @@ On Start:
 
 Before Finish (if you made changes):
 1. Review changes: git status && git diff
-2. Commit them: git add -A && git commit -m "Descriptive message"
+2. **Check what you're committing** - Verify no large files, credentials, or secrets are being added
+3. Commit them: git add -A && git commit -m "Descriptive message"
    - Reference related spec docs in commit messages when applicable
 
 On Finish:

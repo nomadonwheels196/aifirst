@@ -12,7 +12,8 @@ On Start:
 
 Before Finish (if you made changes):
 1. Review changes: git status && git diff
-2. Commit them: git add -A && git commit -m "Descriptive message"
+2. **CRITICAL: Check what you're committing** - NEVER commit PII, credentials, or confidential legal details
+3. Commit them: git add -A && git commit -m "Descriptive message"
    - Use conventional commits (docs:/chore:/etc)
 
 On Finish:

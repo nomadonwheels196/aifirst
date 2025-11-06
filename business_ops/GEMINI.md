@@ -4,8 +4,9 @@
 - **On Start:** Run `bash ~/.agents/session-open.sh $(pwd) "Gemini CLI"`
 - **Before Finish:** If you made changes to files:
   1. Review changes: `git status` and `git diff`
-  2. Commit them: `git add -A && git commit -m "Descriptive message"`
-  3. Use conventional commits (docs:/chore:/etc)
+  2. **CRITICAL: Check what you're committing** - NEVER commit PII, credentials, or confidential legal details
+  3. Commit them: `git add -A && git commit -m "Descriptive message"`
+  4. Use conventional commits (docs:/chore:/etc)
 - **On Finish:** Run `bash ~/.agents/session-close.sh $(pwd) "Gemini CLI" "Your summary of what you did" "n"`
 
 **Scope:**
