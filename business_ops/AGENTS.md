@@ -1,8 +1,35 @@
 # Repository Guidelines
 
+## Scope & Inheritance
+- Applies to `/Users/travis/work/aifirst/business_ops/` directory
+- Inherits from `~/work/aifirst/AGENTS.md` and `~/AGENTS.md`
+
+⚠️ **SESSION PROTOCOL (REQUIRED)**
+
+On Start:
+- Run: bash ~/.agents/session-open.sh $(pwd) "[Agent Name]"
+- Read: .agents/handoff.md for previous session context (if exists)
+
+Before Finish (if you made changes):
+1. Review changes: git status && git diff
+2. Commit them: git add -A && git commit -m "Descriptive message"
+   - Use conventional commits (docs:/chore:/etc)
+
+On Finish:
+- Run: bash ~/.agents/session-close.sh $(pwd) "[Agent Name]" "Your summary of what you did" "n"
+
+## Multi-Agent Coordination
+
+Multiple AI agents may work on this directory:
+- **Claude Code** - Primary development and documentation
+- **Gemini CLI** - Analysis, troubleshooting, research
+- **Codex** - Code generation and assistance
+
+Session scripts prevent conflicts and maintain context between agents.
+
 ## Purpose & Prime Directive
 - Core business, legal, and strategy docs for Ai‑First Holdings Ltd.
-- Maintain internal consistency; align with mission: “Turn AI investment into human capability and measurable ROI.”
+- Maintain internal consistency; align with mission: "Turn AI investment into human capability and measurable ROI."
 - Prime directive: build a legally resilient, founder‑protective structure across all docs.
 
 ## Project Structure

@@ -1,5 +1,20 @@
 # CLAUDE.md
 
+⚠️ **SESSION PROTOCOL:**
+- **On Start:** Run `bash ~/.agents/session-open.sh $(pwd) "Claude Code"`
+- **Before Finish:** If you made changes to files:
+  1. Review changes: `git status` and `git diff`
+  2. Commit them: `git add -A && git commit -m "Descriptive message"`
+  3. Reference related spec docs in commit messages when applicable
+- **On Finish:** Run `bash ~/.agents/session-close.sh $(pwd) "Claude Code" "Your summary of what you did" "n"`
+  - Write a concise summary of what you accomplished
+  - Set last parameter to "y" if README.md needs updating
+
+**Scope:**
+- Applies to `~/work/aifirst/` directory
+- Inherits from `~/AGENTS.md` for user profile and general preferences
+- See `AGENTS.md` in this directory for project-specific agent guidance
+
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Repository Overview
@@ -204,3 +219,27 @@ All major decisions should map back to the Core Company Spec. When proposing cha
 - The company is **pre-MVP** (targeting MVP by end of 2025)
 - Product-Market Fit target: July 1, 2026 (latest: end of 2026)
 - There is also an `AGENTS.md` file that supplements this guidance with agent-specific instructions
+
+## Multi-Agent Coordination
+
+Multiple AI agents work on this project:
+- **Claude Code** (you!) - Primary development and documentation
+- **Gemini CLI** - Analysis, troubleshooting, research
+- **Ollama** - Conversational support via Open WebUI
+- **Codex** - Code generation and assistance
+
+**Session scripts** (`~/.agents/session-open.sh` and `session-close.sh`):
+- Prevent concurrent editing conflicts via session locking
+- Maintain context through `.agents/handoff.md`
+- Track changes in `.agents/changelog.md`
+- Coordinate git pull/push operations
+
+**Best Practices:**
+- Always run session-open at start and session-close at end
+- Check `.agents/handoff.md` for context from previous agent
+- Write clear session summaries for the next agent
+- Commit your work before closing the session
+- Reference spec docs in commit messages when applicable
+
+**User Profile & Preferences:**
+- See `~/AGENTS.md` for complete user profile and collaboration preferences

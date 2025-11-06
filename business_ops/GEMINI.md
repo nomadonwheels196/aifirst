@@ -1,5 +1,18 @@
 # Ai-First Holdings Ltd. - Business, Legal, and Strategy Documents
 
+⚠️ **SESSION PROTOCOL:**
+- **On Start:** Run `bash ~/.agents/session-open.sh $(pwd) "Gemini CLI"`
+- **Before Finish:** If you made changes to files:
+  1. Review changes: `git status` and `git diff`
+  2. Commit them: `git add -A && git commit -m "Descriptive message"`
+  3. Use conventional commits (docs:/chore:/etc)
+- **On Finish:** Run `bash ~/.agents/session-close.sh $(pwd) "Gemini CLI" "Your summary of what you did" "n"`
+
+**Scope:**
+- Applies to `/Users/travis/work/aifirst/business_ops/` directory
+- Inherits from `~/work/aifirst/AGENTS.md` and `~/AGENTS.md` for user profile and general preferences
+- See `AGENTS.md` in this directory for detailed legal/business document guidelines
+
 This directory serves as the central repository for all core business, legal, and strategic documents for Ai-First Holdings Ltd. and its subsidiaries. The prime directive for all documents within this repository is to build a legally resilient and founder-protective corporate structure.
 
 ## Directory Structure
@@ -46,3 +59,26 @@ The document structure is comprehensive and addresses the key legal and tax cons
 *   **Transfer Pricing Documentation:** The intercompany agreements must be supported by a formal, contemporaneous transfer pricing study.
 *   **Intercompany Agreement Placeholders:** Consideration amounts, valuation dates, and other details in the intercompany IP assignment and license agreements must be filled in.
 *   **GDPR Compliance:** The Annexes for the Standard Contractual Clauses (SCCs) must be completed, and a Transfer Impact Assessment (TIA) must be performed for all transfers of personal data from the EU to the US and Cayman Islands.
+
+## Multi-Agent Coordination
+
+Multiple AI agents may work on this directory:
+- **Claude Code** - Primary development and documentation
+- **Gemini CLI** (you!) - Analysis, troubleshooting, research
+- **Codex** - Code generation and assistance
+
+**Session scripts** (`~/.agents/session-open.sh` and `session-close.sh`):
+- Prevent concurrent editing conflicts via session locking
+- Maintain context through `.agents/handoff.md`
+- Track changes in `.agents/changelog.md`
+- Coordinate git pull/push operations
+
+**Best Practices:**
+- Always run session-open at start and session-close at end
+- Check `.agents/handoff.md` for context from previous agent
+- Write clear session summaries for the next agent
+- Commit your work before closing the session
+- Use conventional commits for legal/business document changes
+
+**User Profile & Preferences:**
+- See `~/AGENTS.md` for complete user profile and collaboration preferences

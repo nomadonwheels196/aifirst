@@ -8,6 +8,44 @@ Purpose
 - Provide agent-facing guidance specific to the Ai First project: structure, workflows, and conventions.
 - Reference the global profile and collaboration preferences without duplicating personal details.
 
+⚠️ SESSION PROTOCOL (REQUIRED)
+
+On Start:
+- Run: bash ~/.agents/session-open.sh $(pwd) "[Agent Name]"
+  - Agent Names: "Claude Code", "Gemini CLI", "Ollama", "Codex"
+- Read: README.md "Current State" section (if exists)
+- Read: .agents/handoff.md for previous session context (if exists)
+
+Before Finish (if you made changes):
+1. Review changes: git status && git diff
+2. Commit them: git add -A && git commit -m "Descriptive message"
+   - Reference related spec docs in commit messages when applicable
+
+On Finish:
+- Run: bash ~/.agents/session-close.sh $(pwd) "[Agent Name]" "Your summary of what you did" "n"
+  - Write a concise summary of what you accomplished
+  - Set last parameter to "y" if README.md objectives/strategy were changed
+
+Multi-Agent Coordination
+
+Multiple AI agents work on this project:
+- **Claude Code** - Primary development and documentation
+- **Gemini CLI** - Analysis, troubleshooting, research
+- **Ollama** - Conversational support via Open WebUI
+- **Codex** - Code generation and assistance
+
+Session scripts (~/.agents/):
+- Prevent concurrent editing conflicts via session locking
+- Maintain context through .agents/handoff.md
+- Track changes in .agents/changelog.md
+- Coordinate git pull/push operations
+
+Best Practices:
+- Always run session-open at start and session-close at end
+- Check .agents/handoff.md for context from previous agent
+- Write clear session summaries for the next agent
+- Commit your work before closing the session
+
 Project Overview
 - Project: Ai First — proactive AI coaching platform embedded in daily workflows to drive AI adoption and transformation.
 - Mission: Turn AI investment into human capability and measurable ROI by changing how people think and work with AI.
