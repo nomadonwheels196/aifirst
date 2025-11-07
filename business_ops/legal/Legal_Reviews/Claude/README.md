@@ -1,0 +1,73 @@
+# Claude
+
+
+## Purpose
+This folder organizes materials for Business Operations — legal/Legal_Reviews/Claude. Treat contents as sensitive; reference documents without duplicating.
+
+
+## Current State
+- Last Updated: 2025-11-07
+- Status: active
+- Last Agent/Owner: <role or agent>
+
+
+## Context & Inheritance
+- Inherits scope and principles from parent ../README.md and root README.md.
+- Agent guidance: AGENTS.md and ~/.agents/README.md.
+- Ancestors with README.md:
+  - ../README.md (../README.md)
+  - ../../README.md (../../README.md)
+  - ../../../README.md (../../../README.md)
+
+
+## Scope
+<What belongs here vs elsewhere>
+
+
+## Inputs
+<List specs, upstream processes, systems>
+
+
+## Outputs
+- Documentation
+
+
+## Primary Owner
+- Role: Legal (role-based)
+- Review cadence: quarterly
+- Approval: required for substantive changes
+
+
+## Contributors
+- Roles/Teams: Legal, Operations
+- Change process: PR with Legal approval
+
+
+## Security & Privacy
+- Clearly mark any folders or documents that contain PII or sensitive data so appropriate controls can be applied.
+- Never commit credentials or tokens; use environment variables or secure stores.
+- See repo AGENTS.md and ~/.agents/README.md.
+
+
+## Related
+- legal_review_batch1_incorporation_2025-10-31_23-28.md (legal_review_batch1_incorporation_2025-10-31_23-28.md)
+- legal_review_batch2_founders_2025-11-01_12-21.md (legal_review_batch2_founders_2025-11-01_12-21.md)
+- legal_review_batch3_esop_2025-11-02_11-37.md (legal_review_batch3_esop_2025-11-02_11-37.md)
+- legal_review_batch4_employment_2025-11-02_11-39.md (legal_review_batch4_employment_2025-11-02_11-39.md)
+- legal_review_batch5_shareholders_2025-11-02_11-42.md (legal_review_batch5_shareholders_2025-11-02_11-42.md)
+- legal_review_batch6_ip_intercompany_2025-11-02_11-45.md (legal_review_batch6_ip_intercompany_2025-11-02_11-45.md)
+
+
+## Operational Notes
+<Runbooks, SLAs, calendars>
+
+
+## Change Log
+See PR history or local CHANGELOG.md.
+
+
+## Contributing
+- For authors (human or AI) creating or updating this folder: keep this README.md concise and actionable.
+- Use scripts/new_dir.sh to scaffold new areas when appropriate.
+- Link changes to any relevant spec (top-level or local), not only business_spec/*. If a spec governs or informs this folder, reference it explicitly.
+- Avoid duplicating content that exists in parent README.md; link instead.

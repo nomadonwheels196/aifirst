@@ -172,7 +172,7 @@ THEN escalate_to_coach_intervention
    - Inbox processing reminders
 
 3. **Documentation**
-   - System overview README
+   - System overview README.md
    - Quick reference guide
    - Troubleshooting guide
    - Examples

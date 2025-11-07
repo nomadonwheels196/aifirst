@@ -246,7 +246,7 @@ Ai-First Holdings Ltd. (Cayman Islands)
 - **Moral rights**: IP assignment provisions respect inalienable moral rights under Spanish law
 - **Labor law compliance**: Vesting not tied to waiver of employment rights (prohibited under Estatuto de los Trabajadores)
 
-### Intercompany Agreements and Transfer Pricing
+### Intercompany_Agreements and Transfer Pricing
 
 **Rationale**: Arm's-length intercompany agreements establish clear commercial terms for IP licensing and services, provide transfer pricing documentation, and support Cayman economic substance.
 
@@ -477,7 +477,7 @@ Ai-First Holdings Ltd. (Cayman Islands)
 **Generic/Template**:
 - **IP Assignment Confidentiality.md**: Generic IP assignment and confidentiality template
 
-### E. Intercompany Agreements and IP (12 documents)
+### E. Intercompany_Agreements and IP (12 documents)
 
 **IP License Agreements**:
 - **Intercompany IP License Agreement - Cayman to Delaware.md**:
@@ -533,7 +533,7 @@ Ai-First Holdings Ltd. (Cayman Islands)
   - Supports Cayman economic substance (Cayman receives and pays for services)
 
 **Implementation and Compliance**:
-- **M-6 Implementation Summary - Intercompany Agreements.md**: Comprehensive summary of intercompany agreement implementation
+- **M-6 Implementation Summary - Intercompany_Agreements.md**: Comprehensive summary of intercompany agreement implementation
   - Addresses transfer pricing issues identified in legal review
   - Alignment with Transfer Pricing Policy
   - Recordation and filing checklist (USPTO, IRS Form 926, withholding tax setup)
@@ -565,7 +565,7 @@ Ai-First Holdings Ltd. (Cayman Islands)
 - **CbCR Notification Tracker Template 2025.md**: Tracker for Country-by-Country Reporting notifications
 - **ESA Annual Calendar - Cayman HoldCo 2026 Template.md**: Annual compliance calendar for Cayman Economic Substance
 
-### G. Investor Relations (1 document)
+### G. Investor_Relations (1 document)
 
 - **Investor Side Letter - Voting Covenant template.md**: Template side letter for investors
   - Investor covenant to vote for founder slate of directors and Travis Sheppard as Chair
@@ -581,7 +581,7 @@ Ai-First Holdings Ltd. (Cayman Islands)
   - Founder consent requirements
   - Liquidation preferences (future)
 
-### I. Structure Analysis and Planning (3 documents)
+### I. Structure_Analysis and Planning (3 documents)
 
 - **structuring_intake_form.md**: Detailed intake questionnaire for structuring decisions
   - Founder tax profile, citizenship, residency
@@ -593,7 +593,7 @@ Ai-First Holdings Ltd. (Cayman Islands)
 - **OCI/oci_web.md**: Web-based structuring analysis tool documentation
 - **OCI/oci_summary.md**: Summary of structuring analysis outcomes
 
-### J. Legal Reviews (Completed Internal Audits) (10+ documents)
+### J. Legal_Reviews (Completed Internal Audits) (10+ documents)
 
 **Consolidated Reviews**:
 - **legal_review_consolidated_2025-11-03_12-06.md**: Final consolidated legal review (62 documents reviewed)
@@ -631,10 +631,10 @@ Ai-First Holdings Ltd. (Cayman Islands)
 | Employment & Contractors | 23 | Draft - Founder employment classification urgent |
 | Intercompany & IP | 12 | Draft - Needs external benchmarking study |
 | Transfer Pricing & Tax | 3 | Draft - Framework solid; external study required |
-| Investor Relations | 1 | Draft - Needs alignment with Shareholders Agreement |
+| Investor_Relations | 1 | Draft - Needs alignment with Shareholders Agreement |
 | M&A & Strategic | 1 | Draft - Framework document |
-| Structure Analysis | 3 | Planning documents |
-| Legal Reviews | 10+ | Internal audits complete |
+| Structure_Analysis | 3 | Planning documents |
+| Legal_Reviews | 10+ | Internal audits complete |
 | Agent Configuration | 2 | Reference documents |
 | **TOTAL** | **80+** | **All draft; none executed** |
 
@@ -1766,7 +1766,7 @@ Beyond document fixes, the following operational compliance items require ongoin
 
 ---
 
-### Phase 3: Intercompany Agreements and Transfer Pricing (Months 2-4)
+### Phase 3: Intercompany_Agreements and Transfer Pricing (Months 2-4)
 
 **Objective**: Execute intercompany IP licenses and services agreements; obtain transfer pricing benchmarking study
 
@@ -1788,7 +1788,7 @@ Beyond document fixes, the following operational compliance items require ongoin
    - Document service benefit test
    - Penalty protection opinion
 
-3. **Month 3: Finalize and Execute Intercompany Agreements**
+3. **Month 3: Finalize and Execute Intercompany_Agreements**
    - Intercompany IP License Agreement - Cayman to Delaware
    - Intercompany IP License Agreement - Cayman to Spain
    - Intercompany Services Agreement (Delaware and Spain to Cayman)
@@ -2010,7 +2010,7 @@ The founder should ask legal counsel the following questions during review to en
 
 28. **What are the ongoing GDPR compliance obligations (registers of processing activities, data subject rights, breach notification, Transfer Impact Assessments) and who is responsible?**
 
-### Investor Relations and Financing
+### Investor_Relations and Financing
 
 29. **Are the investor rights provisions in the Shareholders Agreement (drag-along, tag-along, ROFR, pre-emptive rights, super pro-rata) standard and VC-acceptable, or will they create friction during Series A fundraising?**
 
@@ -2044,7 +2044,7 @@ The founder should ask legal counsel the following questions during review to en
 
 41. **Are there any provisions in our current documents that are "deal-breakers" or "red flags" that would prevent a VC investor from investing in Series A, or an acquirer from acquiring the company? If so, which ones and how should we fix them?**
 
-42. **Have you seen similar structures (Cayman parent with Delaware/Spain subsidiaries) successfully exit via acquisition or IPO? Any cautionary tales or lessons learned?**
+42. **Have you seen similar structures (Cayman parent with Delaware/Spain subsidiaries) successfully exit via acquisition or IPO? Any cautionary tales or Lessons_Learned?**
 
 43. **Are there any provisions that create "tax traps" or unintended tax consequences for founders or investors (e.g., PFIC treatment, Section 409A violations, Spanish tax residency issues)?**
 

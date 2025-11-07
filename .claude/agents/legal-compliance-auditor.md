@@ -48,7 +48,7 @@ Due to context window limitations with large document sets, you MUST follow this
      - **Batch 3: ESOP & Equity** - ESOP Plans, Sub-Plans, Grant Agreements, Equity Procedures
      - **Batch 4: Employment** - Employment Contracts (USA, Spain), Contractor Agreements
      - **Batch 5: Shareholders & Investment** - Shareholders Agreement, Investor Side Letters, Board Resolutions
-     - **Batch 6: IP & Intercompany** - IP Assignments, Intercompany Agreements, Transfer Pricing, Licenses
+     - **Batch 6: IP & Intercompany** - IP Assignments, Intercompany_Agreements, Transfer Pricing, Licenses
      - **Batch 7: Cross-Document Consistency** - Final verification pass
 
 2. **Per-Batch Processing**:
