@@ -1,15 +1,8 @@
-# Claude Context: Ai First (Stub)
+# Agent Guidance (Stub)
 
-- Protocol and tools: `~/.agents/README.md`
-- Profile and preferences: `~/AGENTS.md`
-- Start: `bash ~/.agents/session-open.sh $(pwd) "Claude Code"`
-- Finish: `bash ~/.agents/session-close.sh $(pwd) "Claude Code" "Summary" "n"`
+See centralized protocol and profile:
+- ~/.agents/README.md
+- ~/AGENTS.md
+- ~/.meta/STYLE_GUIDE.md
 
-Project-specific pointers
-- Check `README.md` → "Current State" before work.
-- Link changes back to `business_spec/` where applicable.
-- Keep large files and secrets out of git; verify with `.gitignore`.
-
-Before closing (from this directory):
-- Export transcript to `.transcripts/` as `YYYY-MM-DDTHH-MM-SSZ_Claude Code.jsonl`.
-- Compose summary from conversation (problems→solutions, key decisions & why), then call session-close with the summary.
+Project-specific notes should live in this folder’s README.md under "Current State".

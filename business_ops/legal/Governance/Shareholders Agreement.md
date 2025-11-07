@@ -157,7 +157,7 @@ Shareholders Agreement shall control.
   Series A financing (as defined herein) unless extended by Board and Class B consent.
 
 - Procedure: Elections, timing, allocation waterfall, and compliance mechanics shall be as
-  operationalized in Appendix A (file: `ExportBlock-8dac0805-4724-4e5c-900b-c9bfe0d0963f-Part-1/ESOP Equity/Equity Issuance Procedure Appendix.md`).
+  operationalized in Appendix A (file: `ExportBlock-8dac0805-4724-4e5c-900b-c9bfe0d0963f-Part-1/ESOP_Equity/Equity Issuance Procedure Appendix.md`).
 
 ## 8bis. Class B Anti‑Dilution Protection
 

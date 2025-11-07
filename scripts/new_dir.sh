@@ -19,10 +19,12 @@ DIR_NAME="$AREA"
 mkdir -p "$DIR_NAME"
 mkdir -p "$DIR_NAME/.keep"
 
-# README
+# README.md
 if [ ! -f "$DIR_NAME/README.md" ]; then
-  if [ -f "templates/README.template.md" ]; then
-    cp "templates/README.template.md" "$DIR_NAME/README.md"
+  if [ -f "$HOME/.templates/README.md.template.md" ]; then
+    cp "$HOME/.templates/README.md.template.md" "$DIR_NAME/README.md"
+  elif [ -f "templates/README.md.template.md" ]; then
+    cp "templates/README.md.template.md" "$DIR_NAME/README.md"
   else
     cat > "$DIR_NAME/README.md" << 'EOF'
 # <Area Name>
@@ -65,7 +67,9 @@ fi
 
 # AGENTS stub
 if [ ! -f "$DIR_NAME/AGENTS.md" ]; then
-  if [ -f "templates/AGENTS.stub.md" ]; then
+  if [ -f "$HOME/.templates/AGENTS.stub.md" ]; then
+    cp "$HOME/.templates/AGENTS.stub.md" "$DIR_NAME/AGENTS.md"
+  elif [ -f "templates/AGENTS.stub.md" ]; then
     cp "templates/AGENTS.stub.md" "$DIR_NAME/AGENTS.md"
   else
     cat > "$DIR_NAME/AGENTS.md" << 'EOF'
@@ -82,7 +86,9 @@ fi
 
 # OWNERS
 if [ ! -f "$DIR_NAME/OWNERS.md" ]; then
-  if [ -f "templates/OWNERS.template.md" ]; then
+  if [ -f "$HOME/.templates/OWNERS.template.md" ]; then
+    cp "$HOME/.templates/OWNERS.template.md" "$DIR_NAME/OWNERS.md"
+  elif [ -f "templates/OWNERS.template.md" ]; then
     cp "templates/OWNERS.template.md" "$DIR_NAME/OWNERS.md"
   else
     cat > "$DIR_NAME/OWNERS.md" << 'EOF'
@@ -117,5 +123,4 @@ else
 fi
 
 echo "Scaffolded directory: $DIR_NAME"
-echo "Remember to update README and link relevant business_spec/* sections."
-
+echo "Remember to update README.md and link relevant business_spec/* sections."

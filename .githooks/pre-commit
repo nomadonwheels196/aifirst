@@ -18,7 +18,7 @@ while IFS= read -r path; do
 done < <(git diff --cached --name-only)
 
 if [ "$FAILED" -ne 0 ]; then
-  echo "[pre-commit] Remove large files from the commit or add to .gitignore." >&2
+  echo "[pre-commit] Remove large files from the commit or add to ..gitignore." >&2
   exit 1
 fi
 
@@ -34,5 +34,34 @@ for d in $NEW_DIRS; do
     echo "[pre-commit] Warning: '$d' is missing README.md or AGENTS.md." >&2
   fi
 done
+
+# Enforce Title_Case_with_Underscores for new/renamed directories
+BAD=0
+check_name() {
+  base="$1"
+  # Reject spaces, hyphens, and certain symbols
+  if echo "$base" | grep -qE '[[:space:]-]|[&%+]'; then
+    return 1
+  fi
+  # Must match Title_Case_with_Underscores pattern
+  echo "$base" | grep -qE '^[A-Z][A-Za-z0-9]*(?:_[A-Z][A-Za-z0-9]*)*$'
+}
+
+DIR_CANDIDATES=$(git diff --cached --name-status | awk '$1 ~ /^(A|R)/{print $2}' | xargs -I{} dirname {} | sort -u)
+for d in $DIR_CANDIDATES; do
+  [ -d "$d" ] || continue
+  base=$(basename "$d")
+  # Skip hidden and common system/code dirs
+  case "$base" in .git|.githooks|.github|.venv|venv|node_modules|.agents|.claude|.meta|scripts|templates) continue;; esac
+  if ! check_name "$base"; then
+    echo "[pre-commit] Naming violation: '$d' must use Title_Case_with_Underscores (no spaces/hyphens/symbols)." >&2
+    BAD=1
+  fi
+done
+
+if [ "$BAD" -ne 0 ]; then
+  echo "[pre-commit] Fix directory names before committing (see ~/.meta/STYLE_GUIDE.md)." >&2
+  exit 1
+fi
 
 exit 0

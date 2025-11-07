@@ -158,7 +158,7 @@ Within hours, you'll have a working system. Within weeks, you'll wonder how you 
 
 Read the complete story: [Life as Code: My Story of Partnership with AI](../../examples/case_studies/life-as-code-story.md)
 
-This document shares the full conversation, challenges faced, and lessons learned. It's a great read for anyone considering AI partnership.
+This document shares the full conversation, challenges faced, and Lessons_Learned. It's a great read for anyone considering AI partnership.
 
 ---
 

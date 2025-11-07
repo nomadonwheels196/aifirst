@@ -1,11 +1,8 @@
-# AGENTS.md — Business Ops (Stub)
+# Agent Guidance (Project Stub)
 
-- Protocol and tools: `~/.agents/README.md`
-- Profile and preferences: `~/AGENTS.md`
-- Start/finish sessions with shared scripts. Run from repo root.
+This project uses centralized agent protocol and profile.
+- Protocol & tools: ~/.agents/README.md
+- Personal profile: ~/AGENTS.md
+- Style guide: ~/.meta/STYLE_GUIDE.md
 
-Notes
-- DO NOT commit PII, credentials, or confidential legal details.
-- Keep file names stable (exported source structure); avoid renames.
-- Link changes back to `../../business_spec/` where applicable.
-
+Keep this file minimal; do not duplicate agent docs here.

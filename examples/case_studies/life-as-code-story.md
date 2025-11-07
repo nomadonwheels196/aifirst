@@ -61,7 +61,7 @@ Over the next two hours, we built a whole new (automated) way to organize my lif
 2. **Git Repositories**
    - Personal: Private GitHub repo for sensitive docs
    - Ai First: Public repo my team can access
-   - Both with smart .gitignore files (no giant RAW photos in git!)
+   - Both with smart ..gitignore files (no giant RAW photos in git!)
 
 3. **Automation Scripts**
    - Daily git sync at 4 AM (I work late)
@@ -69,7 +69,7 @@ Over the next two hours, we built a whole new (automated) way to organize my lif
    - All logs tracked for troubleshooting
 
 4. **Documentation**
-   - System README explaining the architecture for both me and for future Ai partnerships
+   - System README.md explaining the architecture for both me and for future Ai partnerships
    - Quick reference guide for daily commands
    - Everything version-controlled
 
