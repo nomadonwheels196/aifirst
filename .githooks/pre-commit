@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+THRESHOLD=$((5*1024*1024))
+FAILED=0
+
+while IFS= read -r path; do
+  if git diff --cached --name-status -- "$path" | grep -q '^D'; then
+    continue
+  fi
+  if [ -f "$path" ]; then
+    size=$(wc -c < "$path" | tr -d ' ')
+    if [ "$size" -gt "$THRESHOLD" ]; then
+      echo "[pre-commit] Blocked large file (>5MB): $path ($size bytes)" >&2
+      FAILED=1
+    fi
+  fi
+done < <(git diff --cached --name-only)
+
+if [ "$FAILED" -ne 0 ]; then
+  echo "[pre-commit] Remove large files from the commit or add to .gitignore." >&2
+  exit 1
+fi
+
+if [ -f README.md ] && ! grep -q '^## Current State' README.md; then
+  echo "[pre-commit] Warning: README.md lacks a '## Current State' section." >&2
+fi
+
+# Warn on new directories without README.md and AGENTS.md
+NEW_DIRS=$(git diff --cached --name-status | awk '$1=="A"{print $2}' | xargs -I{} dirname {} | sort -u)
+for d in $NEW_DIRS; do
+  [ -d "$d" ] || continue
+  if [ ! -f "$d/README.md" ] || [ ! -f "$d/AGENTS.md" ]; then
+    echo "[pre-commit] Warning: '$d' is missing README.md or AGENTS.md." >&2
+  fi
+done
+
+exit 0

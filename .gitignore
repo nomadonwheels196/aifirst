@@ -62,6 +62,9 @@ logs/
 data/raw/
 data/processed/
 
+# Transcripts (stored per-working-directory)
+.transcripts/
+
 # Model files (too large for git)
 *.pt
 *.pth
