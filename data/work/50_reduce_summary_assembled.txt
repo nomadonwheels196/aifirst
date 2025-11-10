@@ -1,0 +1,19 @@
+Thinking...
+We need to read the transcript: It just has a placeholder. The user gave a "Step 50 — Reduce Summary (Draft)" with instructions to produce a single cohesive JSON summary given multiple per-chunk summaries (bullets + narrative). But no actual per-chunk summaries provided? The transcript shows empty lists. Maybe the transcript is missing? We have to output JSON with the structure. But what to fill? Perhaps we need to produce an empty summary? But the instruction: "You are given multiple per‑chunk summaries (bullets + narrative). Produce a single cohesive JSON summary." Without data, we might produce empty. The transcript shows empty bullets and narrative. So maybe output same empty? But that seems trivial.
+
+Maybe there is some context missing. But we must output JSON only. Provide summary key with bullets array empty and narrative empty. Let's do that.
+
+We must use exactly one top-level key: summary. Provide JSON. No prose. Let's output:
+
+{
+  "summary": {
+    "bullets": [],
+    "narrative": ""
+  }
+}
+
+Ok.
+...done thinking.
+
+{"summary":{"bullets":[],"narrative":""}}
+

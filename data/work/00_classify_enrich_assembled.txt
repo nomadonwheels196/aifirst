@@ -1,0 +1,27 @@
+Thinking...
+We need to parse transcript. We have only few lines. Speakers: "Travis" at 00:43:25. "Speaker 1" at 00:43:58. Likely internal meeting? The transcript suggests a conversation between two participants: Travis and someone (Speaker 1). There's no company info. We should set classification to "internal" maybe? But it's unclear. Could be internal. There is no evidence of external. Might default to "internal" because no external company. But classification could be "unknown". We can set "internal" if we think internal. Let's examine transcript: "Nice. No, then I'll definitely do that. So thanks a lot for reaching out and thinking of me. It was super interesting talk." This might be internal conversation with someone. Then "Travis" says "It was. I'm looking forward to your feedback later. Have a good one. Talk to you later. You too. Cheers." So "Travis" is likely internal participant. "Speaker 1" says "Bye." So participants: Travis (maybe a known name). Speaker 1 unknown. For email unknown, set "?". Role: maybe "participant". Title unknown. Company unknown.
+
+Confidence: we can set 0.8 for Travis and 0.8 for Speaker 1. classification: maybe "internal". But we can set "unknown" to be safe. The instructions: "Determine internal vs external; map speakers → participants; capture names, roles/titles; company name if external. Use calendar/CRM metadata when provided; otherwise infer from transcript with confidence." We don't have metadata. So classification uncertain. Let's choose "internal". Provide company: null.
+
+Now produce JSON accordingly.
+
+Need to ensure top-level keys: meeting, participants. For participants array, we need objects: name, email, role, title, company, speaker_ids, confidence.
+
+For Travis: name "Travis". Email "?". Role maybe "participant" or maybe "unknown". Let's set "role": "participant". Title: "?". Company: null. speaker_ids: ["SPEAKER_1"]? Actually "Travis" is at 00:43:25. We need to assign speaker IDs based on transcript. We have "00:43:25 Travis" but no ID. "00:43:58 Speaker 1". So "Travis" may correspond to speaker ID something like "SPEAKER_2"? But we don't have. The transcript lines show no speaker IDs except "Speaker 1" is labelled. "Travis" is just a name. So we may assign speaker ID "SPEAKER_2"? But we don't know. The instruction: "map speakers → participants; capture names, roles/titles; company name if external. Use calendar/CRM metadata when provided; otherwise infer from transcript with confidence." We should produce speaker_ids as array of IDs like "SPEAKER_1". Since we only have "Speaker 1" as explicit ID, we can assign that ID to the second participant. For Travis, maybe "SPEAKER_2". But we can just assign no speaker ID or "SPEAKER_2". The instruction says "speaker_ids: ["SPEAKER_1"]" example. So we can create mapping. We'll assign "SPEAKER_1" to Travis? But then "Speaker 1" is same ID. That would duplicate. Actually "Speaker 1" appears in transcript as "Speaker 1". That could be the second participant. So we might map Travis as "SPEAKER_2". Let's just use that.
+
+Thus participants:
+
+1. Travis: speaker_ids ["SPEAKER_2"].
+2. Speaker 1: speaker_ids ["SPEAKER_1"].
+
+Confidence: 0.8 each.
+
+Return JSON.
+
+Note: "email" set "?". "role" maybe "unknown" or "participant". Let's set "role": "unknown". Title: "?". Company: null.
+
+Let's produce JSON.
+...done thinking.
+
+{"meeting":{"classification":"internal","company":null},"participants":[{"name":"Travis","email":"?","role":"unknown","title":"?","company":null,"speaker_ids":["SPEAKER_2"],"confidence":0.8},{"name":"Speaker 1","email":"?","role":"unknown","title":"?","company":null,"speaker_ids":["SPEAKER_1"],"confidence":0.8}]}
+

@@ -1,0 +1,8 @@
+# Privacy configuration (pilot)
+defaults:
+  classification: internal
+  redact_pii: true
+  require_human_review_for:
+    - legal
+    - security
+    - sensitive_customer

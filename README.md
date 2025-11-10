@@ -4,9 +4,9 @@
 Turn AI investment into human capability and measurable ROI by changing the way people think and work with AI. This repository contains company specifications, business documentation, and operational materials for AI First.
 
 ## Current State
-- Last Updated: 2025-11-07
+- Last Updated: 2025-11-10
 - Status: active
-- Last Agent/Owner: Codex
+- Last Agent/Owner: Codex CLI
 
 ### Active Work
 - None at the moment
@@ -20,6 +20,16 @@ Turn AI investment into human capability and measurable ROI by changing the way 
 ### Next Priority
 1. Keep specs in `business_spec/` aligned with decisions
 2. Add project-specific TODOs to `.agents/context.yaml`
+
+### SOPs
+- Company SOPs: `Company_SOPs/`
+- Business Ops SOPs: `Business_Ops/SOPs/`
+- GTM SOPs: `GTM/SOPs/`
+- IT SOPs: `IT/SOPs/`
+- People SOPs: `People/SOPs/`
+- Platform Eng SOPs: `Platform_Eng/SOPs/`
+- Product Eng SOPs: `Product_Eng/SOPs/`
+- Product Management SOPs: `Product_Management/SOPs/`
 
 ## Context & Inheritance
 - Inherits scope and principles from parent `../README.md` and root `README.md`.

@@ -1,0 +1,29 @@
+{
+  "meeting": {
+    "classification": "external"
+  },
+  "participants": [
+    {
+      "name": "Speaker 1",
+      "email": "?",
+      "role": "unknown",
+      "title": "?",
+      "company": null,
+      "speaker_ids": [
+        "SPEAKER_1"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "name": "Travis",
+      "email": "?",
+      "role": "unknown",
+      "title": "?",
+      "company": null,
+      "speaker_ids": [
+        "SPEAKER_2"
+      ],
+      "confidence": 0.8
+    }
+  ]
+}

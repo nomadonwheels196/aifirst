@@ -1,0 +1,20 @@
+# Routing config (pilot dry-run)
+destinations:
+  slack:
+    enabled: true
+    mode: dry_run   # no network calls; write payload JSON
+    channel_map:
+      sales: "#sales"
+      product: "#product"
+      platform: "#eng-platform"
+      cs: "#customer-success"
+  issues:
+    enabled: true
+    mode: dry_run
+    trackers:
+      product_eng: "product_eng_backlog"
+      platform_eng: "platform_eng_support"
+      docs: "docs_kb"
+  crm:
+    enabled: true
+    mode: dry_run

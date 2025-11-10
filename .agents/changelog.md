@@ -1,3 +1,15 @@
+## 2025-11-10 23:31:27 UTC - Codex CLI
+
+Session Summary: Clarified corporate structure; added Structure Snapshot, Spain residency, IP HoldCo decision matrix; made NHR optional and cross-linked. Created Spain procurement research workspace (glossary, plan, log with authoritative URLs, primer, checklist). Wrote comprehensive Requirements Guide, bilingual Structure Risk Disclosure, royalty tax model + Python calculator. Built Notion sync script; MCP Notion not detected in this environment.
+
+---
+
+## 2025-11-09 14:46:15 UTC - Codex CLI
+
+Session Summary: Added company-wide SOPs and M2A SOP with canonical JSON; implemented local-first M2A pilot (Ollama) with chunking + strict JSON prompts + schema guards; added Pilot 2 (ChatGPT) using OpenAI API (stubbed here). Recommendations → 1) Compare Pilot vs Pilot2 canonical outputs; pick model; tune chunk size/prompts; add retry-on-guard-fail. 2) Generate dry-run routing payloads (Slack/issues/CRM) from canonical. 3) Enable jsonschema (pip install jsonschema) and run validation. 4) Optional: add repo wrappers + Makefile targets and CI to run ~/.agents/bin/validate_session.sh. 5) Set OPENAI_API_KEY and rerun Pilot 2. 6) Keep session-open/close as mandatory per AGENTS.md and ~/.agents/README.md.
+
+---
+
 ## 2025-11-07 16:48:38 UTC - Claude Code
 
 Fixed session-close script for non-interactive AI use, reviewed and committed Gemini's cloudflared tunnel documentation, standardized all 12 agent instruction files across home/personal/work directories with session protocols and multi-agent coordination, added critical ...gitignore checks to prevent committing large ML models and cache files, updated ...gitignore with model file exclusions. Commits: personal repo (303751f, 61419d8), work repo (cc2a3ba, 62c6b8c). All agent files now have consistent session workflows and large-file warnings.
@@ -101,3 +113,15 @@ tasks_todo:
   - Add PR checks to enforce README.md/spec links in new dirs
 last_updated: "2025-11-07T12:53:10Z"
 last_agent: "Codex CLI"
+\n+## 2025-11-09 10:45:44 UTC - Codex CLI
+\n+Summary:
+- Scaffolded company SOPs and department SOPs; integrated links in README.
+- Seeded M2A SOP with tailored PROCESS_SPEC and runbook.
+- Added canonical JSON sketch and schema; created local-first pilot (Ollama) with chunking + strict JSON prompts; seeded actions/summary in output.
+- Added Pilot 2 (ChatGPT) with safe stub fallback when no API key.
+\n+Key Files:
+- `Company_SOPs/README.md`, `Company_SOPs/_TEMPLATE/*`
+- `Company_SOPs/Meeting-to-Action_M2A/*`
+- `Company_SOPs/Meeting-to-Action_M2A/pilot/*` and `/pilot2/*`
+\n+Notes:
+- No secrets committed; no legal paths modified; no git commits.

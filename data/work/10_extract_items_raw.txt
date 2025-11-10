@@ -1,0 +1,26 @@
+{ "conversation": [
+    {
+        "text": "One of my first employees, lover to death. She's a lawyer by trade. Right. You know, I'm bringing her on as chief of staff or whatever.",
+        "speaker": "Travis"
+    },
+    {
+        "text": "I walked her through exactly how it could do that. And she and she had never even thought of, you know, that as a potential use case.",
+        "speaker": "Travis"
+    },
+    {
+        "text": "That's why a lot of what we're going to have to do early on is is, just start giving people good examples. And once once they see certain things, working, you know, I think your brain start to bring chemistry changes a little bit.",
+        "speaker": "Travis"
+    },
+    {
+        "text": "One of my first use cases was my dad. You're frozen. Let me hear you. Thank you for watching!",
+        "speaker": "Travis"
+    },
+    {
+        "text": "I see, you know, B2C, I already see lawyers, like, who the fuck knows what they are talking about, or we want to buy a house, someone has to sign off on it, and I have to pay him 10,000 euros so that he reads me a text and says, yeah, you understood it.",
+        "speaker": "Speaker 3"
+    },
+    {
+        "text": "I've already got a law firm, actually, so when I was consulting with a law firm about helping us to incorporate, he was like, can I sign up to work with you guys?",
+        "speaker": "Travis"
+    }
+] }

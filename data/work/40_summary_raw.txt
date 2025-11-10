@@ -1,0 +1,3 @@
+{ 
+  "transcript": "The conversation is about a startup idea that uses AI to help people manage their lives and businesses. The speaker, Travis, is looking for feedback from the person on the other end of the call, who remains anonymous. The conversation covers various topics such as AI adoption in Europe, potential use cases for the product, and how it can be used to simplify paperwork and legal tasks.\n\nTravis starts by explaining his idea: \n  " 
+    }

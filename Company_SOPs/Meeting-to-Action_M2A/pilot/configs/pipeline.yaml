@@ -1,0 +1,13 @@
+# Pipeline configuration (pilot)
+stages:
+  - classify_enrich
+  - extract
+  - audience_tag
+  - validate
+  - route_dry_run
+
+io:
+  input_transcript: data/input/transcript.txt
+  input_metadata: data/input/metadata.json
+  work_dir: data/work
+  output_canonical: data/output/canonical.json

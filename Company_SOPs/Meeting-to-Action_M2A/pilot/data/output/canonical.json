@@ -1,0 +1,91 @@
+{
+  "meeting": {
+    "classification": "external"
+  },
+  "participants": [
+    {
+      "name": "Speaker 1",
+      "email": "?",
+      "role": "unknown",
+      "title": "?",
+      "company": null,
+      "speaker_ids": [
+        "SPEAKER_1"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "name": "Travis",
+      "email": "?",
+      "role": "unknown",
+      "title": "?",
+      "company": null,
+      "speaker_ids": [
+        "SPEAKER_2"
+      ],
+      "confidence": 0.8
+    }
+  ],
+  "summary": "Travis and Speaker 3 discuss personal life updates, Travis’s involvement in a new AI startup, and their reflections on Zscaler’s evolution and AI opportunities. No concrete action items or decisions are outlined.\nTravis discusses a strategy to improve AI adoption by embedding an in‑context AI coach that guides users as they work, aiming to overcome resistance and enable better human‑AI collaboration.\nTravis and his colleague discuss leveraging AI agents to automatically extract coaching opportunities, feature requests, and sales insights from meeting transcripts, store them in Markdown, and aggregate them for coaching plans. He emphasizes the need to enable ground‑level employees to creatively build useful agents rather than building all agents from scratch, while noting the challenge of securing executive approval for AI initiatives.\nTravis outlines building an AI co‑pilot that offers proactive assistance while safeguarding data privacy, implementing guardrails to prevent unlimited visibility into employee activity and stressing the need to earn users’ trust.\nDiscussion on developing an AI-driven onboarding and compliance agent, evaluating market focus among enterprise, SMB, and consumer segments, and planning to test all use cases, build sales teams, and gather feedback.\nTravis explained how users interact with the product and shared early feedback, particularly from a lawyer co‑founder. He highlighted a realisation that many people can benefit from AI-driven workflows and demonstrated how he built legal paperwork himself to cut costs. Speaker 3 expressed interest in becoming a design partner, agreed to follow up, and Travis promised to reach out next week.\nBrief exchange of pleasantries; Travis plans to provide feedback later.\n",
+  "evidence": [
+    {
+      "id": "ev1",
+      "quote": "I'm looking forward to your feedback later.",
+      "timestamp": "00:43:25",
+      "speaker_id": "Travis"
+    },
+    {
+      "id": "ev2",
+      "quote": "Bye.",
+      "timestamp": "00:43:58",
+      "speaker_id": "Speaker 1"
+    }
+  ],
+  "outputs": {
+    "actions": [
+      {
+        "title": "Exchange contact info and meeting details",
+        "assignee": "Travis",
+        "due": "",
+        "sla": "",
+        "status": "open",
+        "evidence_id": null
+      },
+      {
+        "title": "Schedule follow-up meeting next week",
+        "assignee": "Travis",
+        "due": "",
+        "sla": "",
+        "status": "open",
+        "evidence_id": "ev1"
+      },
+      {
+        "title": "Consider potential design-partner role and send thoughts",
+        "assignee": "Speaker 3",
+        "due": "",
+        "sla": "",
+        "status": "open",
+        "evidence_id": "ev1"
+      },
+      {
+        "title": "Prepare demo of AI coach guardrails and outputs",
+        "assignee": "Travis",
+        "due": "",
+        "sla": "",
+        "status": "open",
+        "evidence_id": null
+      },
+      {
+        "title": "Send AI-generated legal paperwork for lawyer review",
+        "assignee": "Travis",
+        "due": "",
+        "sla": "",
+        "status": "open",
+        "evidence_id": null
+      }
+    ],
+    "decisions": [],
+    "risks": [],
+    "audiences": {}
+  }
+}

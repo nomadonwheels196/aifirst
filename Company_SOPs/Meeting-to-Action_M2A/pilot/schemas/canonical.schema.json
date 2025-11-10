@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "M2A Canonical Record (Draft)",
+  "type": "object",
+  "required": ["meeting", "summary", "participants"],
+  "properties": {
+    "id": {"type": "string"},
+    "meeting": {
+      "type": "object",
+      "properties": {
+        "classification": {"type": "string", "enum": ["internal", "external", "unknown"]},
+        "title": {"type": "string"},
+        "start_time": {"type": "string", "format": "date-time"},
+        "end_time": {"type": "string", "format": "date-time"},
+        "organizer": {"type": "string"},
+        "company": {"type": "string"}
+      }
+    },
+    "participants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "email": {"type": "string"},
+          "role": {"type": "string"},
+          "title": {"type": "string"},
+          "company": {"type": "string"},
+          "speaker_ids": {"type": "array", "items": {"type": "string"}},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+        }
+      }
+    },
+    "summary": {"type": "string"},
+    "evidence": {"type": "array"},
+    "outputs": {"type": "object"},
+    "privacy": {"type": "object"}
+  }
+}

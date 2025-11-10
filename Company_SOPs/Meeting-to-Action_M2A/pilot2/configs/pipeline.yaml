@@ -1,0 +1,10 @@
+stages:
+  - classify_enrich
+  - extract
+  - audience_tag
+  - summary
+  - validate
+
+io:
+  input_transcript: Company_SOPs/Meeting-to-Action_M2A/pilot/data/input/transcript1.md
+  output_canonical: Company_SOPs/Meeting-to-Action_M2A/pilot2/data/output/canonical.json

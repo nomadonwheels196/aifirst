@@ -1,15 +1,15 @@
 # Agent Handoff Notes
 
-**Last Session:** 2025-11-07 16:48:38 UTC
-**Agent:** Claude Code
+**Last Session:** 2025-11-10 23:31:27 UTC
+**Agent:** Codex CLI
 
 ## Session Summary
 
-Fixed session-close script for non-interactive AI use, reviewed and committed Gemini's cloudflared tunnel documentation, standardized all 12 agent instruction files across home/personal/work directories with session protocols and multi-agent coordination, added critical ...gitignore checks to prevent committing large ML models and cache files, updated ...gitignore with model file exclusions. Commits: personal repo (303751f, 61419d8), work repo (cc2a3ba, 62c6b8c). All agent files now have consistent session workflows and large-file warnings.
+Session Summary: Clarified corporate structure; added Structure Snapshot, Spain residency, IP HoldCo decision matrix; made NHR optional and cross-linked. Created Spain procurement research workspace (glossary, plan, log with authoritative URLs, primer, checklist). Wrote comprehensive Requirements Guide, bilingual Structure Risk Disclosure, royalty tax model + Python calculator. Built Notion sync script; MCP Notion not detected in this environment.
 
 ## What Was Done
 
-Fixed session-close script for non-interactive AI use, reviewed and committed Gemini's cloudflared tunnel documentation, standardized all 12 agent instruction files across home/personal/work directories with session protocols and multi-agent coordination, added critical ...gitignore checks to prevent committing large ML models and cache files, updated ...gitignore with model file exclusions. Commits: personal repo (303751f, 61419d8), work repo (cc2a3ba, 62c6b8c). All agent files now have consistent session workflows and large-file warnings.
+Session Summary: Clarified corporate structure; added Structure Snapshot, Spain residency, IP HoldCo decision matrix; made NHR optional and cross-linked. Created Spain procurement research workspace (glossary, plan, log with authoritative URLs, primer, checklist). Wrote comprehensive Requirements Guide, bilingual Structure Risk Disclosure, royalty tax model + Python calculator. Built Notion sync script; MCP Notion not detected in this environment.
 
 ## Git Activity
 
@@ -17,10 +17,9 @@ No commits this session
 
 ## Current State
 
-
-**Last Updated:** 2025-11-07 00:00 UTC
-**Last Agent:** Codex
-**Session Status:** Stable ✅
+- Last Updated: 2025-11-09
+- Status: active
+- Last Agent/Owner: Codex CLI
 
 ### Active Work
 - None at the moment
@@ -35,9 +34,15 @@ No commits this session
 1. Keep specs in `business_spec/` aligned with decisions
 2. Add project-specific TODOs to `.agents/context.yaml`
 
-**Mission**: Turn AI investment into human capability and measurable ROI by changing the way people think and work with AI.
-
-This repository contains company specifications, business documentation, and operational materials for AI First.
+### SOPs
+- Company SOPs: `Company_SOPs/`
+- Business Ops SOPs: `Business_Ops/SOPs/`
+- GTM SOPs: `GTM/SOPs/`
+- IT SOPs: `IT/SOPs/`
+- People SOPs: `People/SOPs/`
+- Platform Eng SOPs: `Platform_Eng/SOPs/`
+- Product Eng SOPs: `Product_Eng/SOPs/`
+- Product Management SOPs: `Product_Management/SOPs/`
 
 ## For Next Agent
 
