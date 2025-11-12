@@ -52,3 +52,20 @@ This intentional capitalization distinguishes:
 2. **The industry problem** (AI transformation, AI training) - uppercase emphasizes the impersonal, failing status quo
 
 **All documentation, code comments, commit messages, and communications must follow these rules.**
+
+### Checking and Fixing Naming Conventions
+
+To enforce these rules automatically:
+
+```bash
+# Check for naming convention violations (from project root)
+make -C ~/.agents lint DIR=$(pwd)
+
+# Automatically fix naming convention issues (from project root)
+make -C ~/.agents fix DIR=$(pwd)
+```
+
+The linting tools will flag violations like:
+- "AI First" instead of "Ai First"
+- Incorrect "Ai" vs "AI" usage
+- Other naming inconsistencies

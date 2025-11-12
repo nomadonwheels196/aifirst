@@ -322,7 +322,7 @@ Read the full story here: [symlink to canonical]
 {Cross-references}
 ```
 
-**GTM/Sales**: `~/work/aifirst/gtm/sales/case_studies/{story-name}-sales.md`
+**GTM/Sales**: `~/work/aifirst/growth_and_cx/sales/case_studies/{story-name}-sales.md`
 ```markdown
 # Customer Case Study: {Story Name}
 

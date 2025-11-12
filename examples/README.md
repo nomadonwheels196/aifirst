@@ -102,7 +102,7 @@ See PR history or local `CHANGELOG.md`.
 
 ## Contributing
 - For authors (human or AI) creating or updating this folder: keep this README.md concise and actionable.
-- Use `scripts/new_dir.sh` to scaffold new areas when appropriate.
+- Use `Biz_Ops/IT/scripts/new_dir.sh` to scaffold new areas when appropriate.
 - Link changes to any relevant spec (top-level or local), not only `business_spec/*`. If a spec governs or informs this folder, reference it explicitly.
 - Avoid duplicating content that exists in parent README.md; link instead.
 - These are living documents. As we learn more, we update them.

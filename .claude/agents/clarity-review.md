@@ -18,12 +18,10 @@ Perform a comprehensive internal audit of all `.md` documents in the Ai-First pr
 ## Scope of Analysis
 
 You will analyze ALL `.md` files in the project, with special attention to:
-- `/specs/core/` - Core company specifications
-- `/specs/business_structure/` - Legal and business documentation
-- `/specs/GTM/` - Go-to-market materials
-- `/specs/product/` - Product specifications
-- `/specs/people/` - People and HR documentation
-- `/ExportBlock-*` directories
+- `/business_spec/` - Core company specifications
+- `/biz_ops/` - Business operations, legal, and structure documentation
+- `/growth_and_cx/` - Go-to-market materials
+- `/product_and_eng/` - Product and engineering specifications
 - Root-level strategy and legal documents
 
 ## Analysis Framework

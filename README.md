@@ -29,13 +29,13 @@ Turn AI investment into human capability and measurable ROI by changing the way 
 
 ### SOPs
 - Company SOPs: `Company_SOPs/`
-- Business Ops SOPs: `Business_Ops/SOPs/`
-- GTM SOPs: `GTM/SOPs/`
-- IT SOPs: `IT/SOPs/`
-- People SOPs: `People/SOPs/`
-- Platform Eng SOPs: `Platform_Eng/SOPs/`
-- Product Eng SOPs: `Product_Eng/SOPs/`
-- Product Management SOPs: `Product_Management/SOPs/`
+- Business Ops SOPs: `Biz_Ops/SOPs/`
+- GTM SOPs: `Growth_and_CX/SOPs/`
+- IT SOPs: `Biz_Ops/IT/SOPs/`
+- People SOPs: `Biz_Ops/People_and_Culture/SOPs/`
+- Platform Eng SOPs: `Product_and_Eng/Platform_Eng/SOPs/`
+- Product Eng SOPs: `Product_and_Eng/Product_Eng/SOPs/`
+- Product Management SOPs: `Product_and_Eng/Product_Management/SOPs/`
 
 ## Context & Inheritance
 - Inherits scope and principles from parent `../README.md` and root `README.md`.
@@ -52,15 +52,19 @@ This repository contains all company-level documentation and operational materia
 
 ```
 ~/work/aifirst/
-├── business_ops/         # Business operations, legal, structure planning
-├── business_spec/        # Core company specs (SOURCE OF TRUTH)
-├── examples/             # Real-world case studies and examples
-├── gtm/                  # Go-to-market (marketing, sales, customer success)
-├── people/               # Recruiting, onboarding, HR
-├── product_management/   # Product specs, research, use cases
-├── platform_eng/         # Platform engineering docs
-├── product_eng/          # Product engineering docs
-└── .claude/              # Claude Code agent configurations
+├── biz_ops/                           # Business operations, legal, structure planning
+│   ├── finance/
+│   ├── legal/
+│   ├── people_and_culture/
+│   └── it/
+├── business_spec/                     # Core company specs (SOURCE OF TRUTH)
+├── examples/                          # Real-world case studies and examples
+├── growth_and_cx/                     # Go-to-market (marketing, sales, customer success)
+├── product_and_eng/                   # Product & Engineering
+│   ├── product_management/            # Product specs, research, use cases
+│   ├── platform_eng/                  # Platform engineering docs
+│   └── product_eng/                   # Product engineering docs
+└── .claude/                           # Claude Code agent configurations
 ```
 
 ## Inputs
@@ -104,20 +108,20 @@ This repository contains all company-level documentation and operational materia
 ### Getting Started
 
 #### New Team Members
-Start here: [Case Study: Life as Code](people/onboarding/case-study-life-as-code.md) - Understand how we work
+Start here: [Case Study: Life as Code](Biz_Ops/People_and_Culture/onboarding/case-study-life-as-code.md) - Understand how we work
 
 #### Product Team
-Read: [Product Use Cases](product_management/use_cases/) - What we're building and why
+Read: [Product Use Cases](Product_and_Eng/Product_Management/use_cases/) - What we're building and why
 
 #### Sales/Marketing
-Use: [Customer Case Studies](gtm/sales/case_studies/) - Real stories, real value
+Use: [Customer Case Studies](Growth_and_CX/sales/case_studies/) - Real stories, real value
 
 ## Change Log
 See PR history or local `CHANGELOG.md`.
 
 ## Contributing
 - For authors (human or AI) creating or updating this folder: keep this README.md concise and actionable.
-- Use `scripts/new_dir.sh` to scaffold new areas when appropriate.
+- Use `Biz_Ops/IT/scripts/new_dir.sh` to scaffold new areas when appropriate.
 - Link changes to any relevant spec (top-level or local), not only `business_spec/*`. If a spec governs or informs this folder, reference it explicitly.
 - Avoid duplicating content that exists in parent README.md; link instead.
 - Update specs with version notes

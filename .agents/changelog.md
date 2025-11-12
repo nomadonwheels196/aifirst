@@ -1,3 +1,63 @@
+## 2025-11-12 17:37:13 UTC - Claude Code
+
+Session: Reorganize root directories and centralize utilities
+
+Problems → Solutions:
+- Root directory cluttered with data/, payloads/, scripts/, tools/, and Makefile → Investigated origin of each directory, moved to appropriate functional areas
+- data/ and payloads/ were M2A pipeline working directories → Moved to Biz_Ops/Company_SOPs/Meeting-to-Action_M2A/
+- scripts/ (check_conventions.sh, new_dir.sh, regen_readmes.py) were repo utilities → Moved to Biz_Ops/IT/scripts/
+- tools/ (notion_sync_page.py) was Notion integration utility → Moved to Biz_Ops/IT/tools/
+- Makefile (naming convention linter/fixer) was project-specific → Moved to ~/.agents/ for multi-project use
+- 72+ files referenced old directory paths → Updated all references in .md, .sh, .py files
+
+Key Decisions:
+- Keep Examples/ at root (cross-functional, multi-audience content)
+- Move operational tools to Biz_Ops/IT/ (IT owns repo infrastructure)
+- Move M2A work artifacts to SOP directory (co-locate with process spec)
+- Centralize Makefile in ~/.agents/ (reusable across all projects with DIR parameter)
+- Updated CLAUDE.md with make lint/fix usage instructions
+
+Deliverables:
+- data/, payloads/ → Biz_Ops/Company_SOPs/Meeting-to-Action_M2A/
+- scripts/, tools/ → Biz_Ops/IT/
+- Makefile → ~/.agents/Makefile (with DIR parameter support)
+- Updated 72+ markdown files with new scripts/new_dir.sh paths
+- Updated shell scripts and Python scripts with new paths
+- Updated CLAUDE.md with naming convention enforcement instructions
+- Clean root directory (only Examples/, Business_Spec/, and functional areas remain)
+
+Next: Root directory is now clean and well-organized with clear separation of concerns
+
+---
+
+## 2025-11-12 16:14:04 UTC - Claude Code
+
+Session: Build Growth & Customer Experience team pages in Notion with mission + collaboration focus
+
+Problems → Solutions:
+- User installed Notion MCP server and wanted team pages for Sales, Marketing, Customer Success → Analyzed existing Notion structure, reviewed business spec, created detailed implementation plan (.agents/notion_team_pages_plan.md)
+- Initial pages had too much content, not aligned with user vision → Reviewed Product Management Home as reference, redesigned with cleaner mission + collaboration model
+- Sales page had excessive detail → Simplified to mission statement + 'Working with Sales' section showing cross-team collaboration patterns
+- Needed alignment with business spec and user's Zscaler GTM experience → Incorporated account management (vs opportunity management), customer lifecycle ownership, mid-cycle CS engagement, deployment sign-off requirements
+
+Key Decisions:
+- Used Product Management Home structure as template (simpler, focused)
+- Emphasized mission + cross-team collaboration over detailed processes
+- Sales owns end-to-end customer lifecycle with single accountability
+- Required CS engagement mid-cycle and sign-off before close (from user's experience about continuity)
+- Marketing provides collateral + custom content, Product validates use cases + coordinates POVs, Engineering handles POC environments
+- All pages align with Ai First naming conventions and business spec positioning
+
+Deliverables:
+- Sales Team page: https://www.notion.so/Sales-Team-2a9fd07ed1c281c585b4f06d81bc4be1 (redesigned, clean)
+- Marketing Team page: https://www.notion.so/Marketing-Team-2a9fd07ed1c281f892a8f5347db7c4b4 (created, needs redesign)
+- Customer Success Team page: https://www.notion.so/Customer-Success-Team-2a9fd07ed1c281f08774f11a8c4d1d50 (created, needs redesign)
+- Implementation plan: .agents/notion_team_pages_plan.md (comprehensive guide with databases, templates, metrics)
+
+Next: Apply same mission + collaboration structure to Marketing and Customer Success pages
+
+---
+
 ## 2025-11-12 14:19:24 UTC - Claude Code
 
 Session: clarity review + naming fixes + unified business spec + translations + style enforcement

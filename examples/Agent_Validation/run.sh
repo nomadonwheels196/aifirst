@@ -135,7 +135,7 @@ pass "Scenario E"
 
 ######## Scenario F ########
 note "Scenario F: directory scaffolding"
-bash "$ROOT/scripts/new_dir.sh" "Examples_Governance_Test_$TS" --spec "business_spec/Ai First Company Spec.md" || fail "new_dir.sh failed"
+bash "$ROOT/Biz_Ops/IT/scripts/new_dir.sh" "Examples_Governance_Test_$TS" --spec "business_spec/Ai First Company Spec.md" || fail "new_dir.sh failed"
 [ -f "$ROOT/Examples_Governance_Test_$TS/README.md" ] || fail "scaffold README.md missing"
 [ -f "$ROOT/Examples_Governance_Test_$TS/AGENTS.md" ] || fail "scaffold AGENTS missing"
 [ -f "$ROOT/Examples_Governance_Test_$TS/OWNERS.md" ] || fail "scaffold OWNERS missing"
