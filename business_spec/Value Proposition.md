@@ -26,7 +26,7 @@ We empower employees to automate the repetitive, amplify the meaningful, and fre
 
 ✅ **Visibility into ROI across tools and teams**
 
-✅ **Reduced “shadow Ai” risk through guided use**
+✅ **Reduced "shadow AI" risk through guided use**
 
 | Others | Ai First |
 | --- | --- |

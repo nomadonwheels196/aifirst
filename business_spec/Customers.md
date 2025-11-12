@@ -29,11 +29,11 @@ Ai First flips that:
 - Let their improvements guide organizational change.
 - Feed real adoption data back into both the platform and leadership decision-making.
 
-The outcome is a self-sustaining ecosystem where people, AI, and business outcomes evolve together.
+The outcome is a self-sustaining ecosystem where people, Ai, and business outcomes evolve together.
 
 ## **Personas**
 
-Ai-First creates value for multiple executive stakeholders — each with different pressures but a shared goal: **real Ai impact, not AI noise.**
+Ai First creates value for multiple executive stakeholders — each with different pressures but a shared goal: **real Ai impact, not AI noise.**
 
 ---
 
@@ -63,9 +63,9 @@ Instead of chasing the next big model, Ai First helps CEOs deliver on the promis
 
 ### **CIO – Responsible Ai Adoption & Governance**
 
-**Pain Point:** Ai investments are scattered across tools with no visibility into usage, risk, or ROI. “Shadow Ai” is growing faster than sanctioned adoption.
+**Pain Point:** Ai investments are scattered across tools with no visibility into usage, risk, or ROI. "shadow AI" is growing faster than sanctioned adoption.
 
-**Value Prop:** Ai-First provides a governance-friendly layer that **maps usage, measures adoption, and guides safe behavior** inside existing tools — turning compliance into empowerment instead of restriction.
+**Value Prop:** Ai First provides a governance-friendly layer that **maps usage, measures adoption, and guides safe behavior** inside existing tools — turning compliance into empowerment instead of restriction.
 
 **Proof Metric:** Reduction in unsanctioned tool usage; clear visibility of Ai utilization and ROI across the org.
 
@@ -75,7 +75,7 @@ Instead of chasing the next big model, Ai First helps CEOs deliver on the promis
 
 **Pain Point:** Teams are overworked, workflows are bloated, and transformation projects are too slow or too top-down.
 
-**Value Prop:** Ai-First embeds a **behavioral Ai coach directly into work**, empowering every employee to streamline repetitive tasks, uncover inefficiencies, and deliver measurable productivity gains — bottom-up.
+**Value Prop:** Ai First embeds a **behavioral Ai coach directly into work**, empowering every employee to streamline repetitive tasks, uncover inefficiencies, and deliver measurable productivity gains — bottom-up.
 
 **Proof Metric:** Time saved per workflow; operational cost reduction; measurable throughput gains.
 
@@ -83,9 +83,9 @@ Instead of chasing the next big model, Ai First helps CEOs deliver on the promis
 
 ### **CHRO – Workforce Capability & Engagement**
 
-**Pain Point:** Employees are anxious about Ai, unclear how it applies to their job, and overwhelmed by “Ai training” that never sticks AND pulls them away from the work they need to get done.
+**Pain Point:** Employees are anxious about Ai, unclear how it applies to their job, and overwhelmed by "AI training" that never sticks AND pulls them away from the work they need to get done.
 
-**Value Prop:** Ai-First closes the **Ai competency gap** by turning daily work into continuous, personalized learning — no courses, no classrooms. It’s on-the-job capability growth that builds confidence and retention.
+**Value Prop:** Ai First closes the **Ai competency gap** by turning daily work into continuous, personalized learning — no courses, no classrooms. It's on-the-job capability growth that builds confidence and retention.
 
 **Proof Metric:** Increase in Ai competency scores, engagement, and retention rates; reduced training hours.
 
@@ -93,7 +93,7 @@ Instead of chasing the next big model, Ai First helps CEOs deliver on the promis
 
 ### **CTO – Integration, Scalability & Data Leverage**
 
-**Pain Point:** Fragmented Ai experiments and inconsistent tooling create technical debt and cultural resistance.
+**Pain Point:** Fragmented AI experiments and inconsistent tooling create technical debt and cultural resistance.
 
 **Value Prop:** Ai First unifies the organization’s Ai layer — integrating with existing ecosystems (M365, Slack, Notion, Google Workspace) to deliver contextual coaching and analytics without new infrastructure overhead.
 

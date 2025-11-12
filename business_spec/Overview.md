@@ -1,14 +1,12 @@
-# Overview
+# Ai First – Core Company Spec
 
-# Ai  First – Core Company Spec
-
-**Version:** v1.0
+**Version:** v1.1
 
 **Status:** Draft
 
 **Owner:** Travis Sheppard
 
-**Last Updated:** 2025-10-17
+**Last Updated:** 2025-11-12
 
 ## Purpose
 
@@ -36,17 +34,35 @@ This spec is a **living document** and will evolve as the company grows.
 
 This Core Spec is modular. Each section lives in its own document:
 
+### Core Documents
+
 | File | Description |
 | --- | --- |
-| `mission.md` | Our purpose and long-term intent |
-| `problem.md` | The problem we exist to solve |
-| `customers.md` | Who we serve and why |
-| `value-proposition.md` | How we create value |
-| `product-strategy.md` | What we are building |
-| `operating-principles.md` | How we operate |
-| `success-metrics.md` | Definition of success |
-| `boundaries.md` | What we won’t do |
-| `pov-on-ai.md` | Our philosophy on Ai  |
+| `Mission.md` | Our purpose and long-term intent |
+| `Customers.md` | Who we serve and why |
+| `Value Proposition.md` | How we create value |
+| `Product Strategy.md` | What we are building |
+| `Ai First Framework.md` | Our core methodology |
+| `Guiding Principles.md` | How we operate |
+| `Definition of Success.md` | Success metrics and milestones |
+| `Boundaries and Guardrails.md` | What we won't do |
+| `POV on Ai.md` | Our philosophy on Ai |
+
+### Unified Documents
+
+| File | Description |
+| --- | --- |
+| `business_spec.md` | Complete business specification with cohesive storytelling flow |
+| `customer_story.md` | Condensed customer-facing narrative for sales and marketing |
+| `business_spec_es.md` | Spanish translation of complete business specification |
+| `customer_story_es.md` | Spanish translation of customer story |
+
+### Style & Standards
+
+| File | Description |
+| --- | --- |
+| `STYLE_GUIDE.md` | **MANDATORY** naming conventions and capitalization rules |
+| `clarity_review_2025-11-12_10-20.md` | Clarity audit report (reference) |
 
 ---
 
@@ -66,6 +82,7 @@ Updates must include:
 
 | Version | Date | Author | Change Summary |
 | --- | --- | --- | --- |
+| v1.1 | 2025-11-12 | Travis Sheppard | Added unified documents, Spanish translations, mandatory style guide |
 | v1.0 | 2025-10-17 | Travis Sheppard | Initial Core Spec structure created |
 
 ---

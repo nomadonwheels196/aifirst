@@ -1,3 +1,92 @@
+## 2025-11-12 14:19:24 UTC - Claude Code
+
+Session: clarity review + naming fixes + unified business spec + translations + style enforcement
+
+Problems → Solutions:
+- New Business_Spec needed clarity review → Ran clarity-review agent; identified critical issues (AI/Ai capitalization, broken references, duplicates, inconsistencies)
+- Inconsistent naming conventions → Fixed all instances across 10 documents: 'Ai First' (company), 'Ai' (positive), 'AI' (negative/legacy)
+- Broken file references in Overview.md → Fixed all 9 broken references, removed non-existent problem.md, removed duplicate H1
+- Duplicate Ai First Framework → Removed duplicate section from Product Strategy.md
+- Documents lacked storytelling flow → Created business_spec.md with problem→solution→value→execution narrative
+- Missing demand intelligence value prop → Added visibility benefit across CEO/CIO/CTO sections
+- Needed customer-facing version → Created customer_story.md (50% shorter, sales-focused)
+- No Spanish versions → Created business_spec_es.md and customer_story_es.md with professional translations
+- Agents need naming enforcement → Created mandatory style guides (CLAUDE.md, STYLE_GUIDE.md)
+- business_spec.md file corruption → Restored complete file with all modifications
+- Needed pitch deck guidance → Created PITCH_DECK_PROMPT.md with 2025 AI presentation best practices
+- Needed title slide imagery → Created TITLE_SLIDE_IMAGE_PROMPT.md with 5 concepts + brand guidelines
+
+Key Decisions:
+- Intentional capitalization: 'Ai' (positive/company), 'AI' (negative/legacy) - now mandatory for all agents
+- Company name: 'Ai First' (no hyphen) in all contexts
+- Created unified narratives while preserving modular documents
+- Demand intelligence positioned as key differentiator
+- ServiceNow and Salesforce added to integration ecosystems
+- Final positioning: 'human-driven business transformation enabled by Ai adoption that compounds over time'
+
+Files Created:
+- business_spec/clarity_review_2025-11-12_10-20.md (agent review report)
+- business_spec/business_spec.md (unified narrative, ~460 lines)
+- business_spec/customer_story.md (condensed sales story, ~180 lines)
+- business_spec/business_spec_es.md (Spanish translation, complete spec)
+- business_spec/customer_story_es.md (Spanish translation, customer story)
+- business_spec/STYLE_GUIDE.md (mandatory naming conventions + quick reference)
+- business_spec/PITCH_DECK_PROMPT.md (AI presentation prompts for Gamma/slidedecks.ai)
+- business_spec/TITLE_SLIDE_IMAGE_PROMPT.md (image generation prompts + brand guidelines)
+
+Files Modified:
+- CLAUDE.md (added CRITICAL naming rules section)
+- README.md (updated title, added style warning, updated accomplishments)
+- business_spec/Overview.md (updated structure table, added unified docs + style guide, v1.1)
+- business_spec/Product Strategy.md (removed duplicate, fixed capitalization)
+- business_spec/Customers.md (naming fixes, added demand intelligence)
+- business_spec/Value Proposition.md (shadow AI capitalization)
+- business_spec/Ai First Framework.md (AI→Ai for positive contexts)
+- business_spec/Boundaries and Guardrails.md (AI chatbot, AI risk references)
+
+Impact: Complete business spec standardization with multilingual support, mandatory style enforcement for all future agents, and comprehensive go-to-market collateral (pitch deck + image prompts).
+
+---
+
+## 2025-11-12 11:53:44 UTC - Claude Code
+
+Session: clarity review + naming fixes + unified business spec narrative + customer story
+
+Problems → Solutions:
+- New Business_Spec needed clarity review → Ran clarity-review agent; identified critical issues (AI/Ai capitalization chaos, broken file references, duplicate content, company name inconsistencies)
+- Inconsistent naming conventions → Fixed all instances across 10 documents: 'Ai First' (company name), 'Ai' (positive/company context), 'AI' (negative/legacy context like 'AI training', 'AI chatbot', 'shadow AI')
+- Broken file references in Overview.md → Fixed all 9 broken references, removed non-existent problem.md reference, removed duplicate H1 header
+- Duplicate Ai First Framework content → Removed duplicate section from Product Strategy.md (lines 107-118)
+- Documents lacked cohesive storytelling flow → Created comprehensive business_spec.md with problem→solution→value→execution narrative
+- Missing key value prop (demand intelligence) → Added visibility/demand intelligence benefit across CEO/CIO/CTO sections (surfaces unmet tool needs from workflow data)
+- Needed customer-facing condensed version → Created customer_story.md (50% shorter, pure sales narrative)
+- business_spec.md file corruption → Restored complete file with all user modifications
+
+Key Decisions:
+- Intentional capitalization rules maintained: 'Ai' for positive/company context, 'AI' for negative/legacy challenges
+- Company name standardized: 'Ai First' (no hyphen) in all contexts
+- Created unified narrative documents while preserving all original modular documents intact
+- Positioned demand intelligence as key differentiator: 'If 1,000 employees need PowerPoint AI tool but lack approved solution, executives see quantified demand'
+- Added ServiceNow and Salesforce to integration ecosystems
+- Updated final positioning: 'human-driven business transformation enabled by Ai adoption that compounds over time'
+
+Files Created:
+- business_spec/clarity_review_2025-11-12_10-20.md (agent-generated review report)
+- business_spec/business_spec.md (unified narrative with storytelling flow, ~460 lines)
+- business_spec/customer_story.md (condensed customer-facing story, ~180 lines)
+
+Files Modified:
+- business_spec/Overview.md (fixed table references, removed duplicate H1)
+- business_spec/Product Strategy.md (removed duplicate framework, fixed capitalization)
+- business_spec/Customers.md (company name + AI/Ai fixes, added demand intelligence)
+- business_spec/Value Proposition.md (shadow AI capitalization)
+- business_spec/Ai First Framework.md (AI→Ai for positive contexts)
+- business_spec/Boundaries and Guardrails.md (AI chatbot, AI risk references)
+
+All original modular documents preserved; new unified documents provide both comprehensive internal view (business_spec.md) and customer-facing narrative (customer_story.md).
+
+---
+
 ## 2025-11-12 10:17:17 UTC - Claude Code
 
 Session Summary: Fixed session protocol documentation; archived and replaced Business_Spec with latest version.

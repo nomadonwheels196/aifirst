@@ -1,7 +1,9 @@
-# AI First
+# Ai First
 
 ## Purpose
-Turn AI investment into human capability and measurable ROI by changing the way people think and work with AI. This repository contains company specifications, business documentation, and operational materials for AI First.
+Turn AI investment into human capability and measurable ROI by changing the way people think and work with Ai. This repository contains company specifications, business documentation, and operational materials for Ai First.
+
+**⚠️ CRITICAL:** All agents must follow company naming conventions. See [CLAUDE.md](CLAUDE.md) for mandatory capitalization rules.
 
 ## Current State
 - Last Updated: 2025-11-12
@@ -13,6 +15,10 @@ Turn AI investment into human capability and measurable ROI by changing the way 
 
 ### Recent Accomplishments
 - Repo guidance standardized to use shared multi-agent protocol
+- Business spec documents standardized with mandatory naming conventions (Ai First, Ai vs AI)
+- Created unified business_spec.md and customer_story.md narratives
+- Added Spanish translations (business_spec_es.md, customer_story_es.md)
+- Established style guide for all agents (CLAUDE.md, business_spec/STYLE_GUIDE.md)
 
 ### Known Issues
 - None tracked here (see business_spec/ for strategic items)

@@ -9,8 +9,8 @@
 ## What We Won’t Do
 
 - Replace human creativity or decision-making
-- Build another Ai chatbot platform
-- Sell fear-based “Ai risk” narratives
+- Build another AI chatbot platform
+- Sell fear-based "AI risk" narratives
 - Optimize vanity metrics over impact
 - Build hype instead of value
 
