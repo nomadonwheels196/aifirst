@@ -1,7 +1,5 @@
 # POV on Ai
 
-# Ai First – POV on Ai
-
 **Version:** v1.0
 
 **Owner:** Travis Sheppard
@@ -10,7 +8,7 @@
 
 ## Our Philosophy
 
-Ai is not here to replace humans. Ai is here to **extend human potential**.
+Ai is not here to replace humans. Ai is here to **extend human potential**.  
 
 ## Core Beliefs
 

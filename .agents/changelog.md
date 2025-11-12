@@ -1,3 +1,102 @@
+## 2025-11-12 10:17:17 UTC - Claude Code
+
+Session Summary: Fixed session protocol documentation; archived and replaced Business_Spec with latest version.
+
+Problems → Solutions:
+- Missing "On Start" instruction in /Users/travis/CLAUDE.md → Added explicit session-open command with ⚠️ warning
+- Outdated Business_Spec needed replacement → Archived to /Users/travis/Archive/Work/aifirst/Business_Spec_2025-11-12/ and copied new version from Downloads
+
+Key Decisions:
+- Standardized archive process: Use /Users/travis/Archive/Work/aifirst/ with timestamped subfolders (<FolderName>_YYYY-MM-DD)
+- Session protocol now clearly states session-open must run at start of EVERY session
+
+Files Touched:
+- /Users/travis/CLAUDE.md (added session-open instruction)
+- /Users/travis/Work/Ai_First/Business_Spec/ (all files replaced with new version)
+- /Users/travis/Archive/Work/aifirst/Business_Spec_2025-11-12/ (created, contains old version)
+
+Note: Transcript export not performed - Claude Code currently lacks conversation history export capability.
+
+---
+
+## 2025-11-10 23:57:59 UTC - Codex CLI
+
+Commits this session:\n- 030b16b Session: clarify AiFirst tax structure; add Spain public-sector procurement research (glossary, plan, log, primer, checklist, requirements guide); add bilingual structure risk disclosure; add royalty tax model + CLI calculator; add Notion sync script; update NHR as optional; session artifacts updated
+- 925f0d8 Conventions: unify naming + references; centralize style guide; add linter/fixer + hooks; GTM/Legal renames; tailored READMEs
+- 66c9277 Agents: transcript export default ON; new_dir scaffolding + templates; hooks warnings; validation runner
+- 0d6de58 Simplify agent files and add session infrastructure
+- 62c6b8c Add credential/PII checks to agent instruction files\nTouched files:\n- .agents/changelog.md
+- .agents/context.yaml
+- .agents/handoff.md
+- .claude/agents/case-study-extractor.md
+- .claude/agents/legal-compliance-auditor.md
+- .githooks/pre-commit
+- .github/PULL_REQUEST_TEMPLATE.md
+- .gitignore
+- AGENTS.md
+- CLAUDE.md
+- Company_SOPs/Meeting-to-Action_M2A/.ai/README.md
+- Company_SOPs/Meeting-to-Action_M2A/PROCESS_SPEC.md
+- Company_SOPs/Meeting-to-Action_M2A/README.md
+- Company_SOPs/Meeting-to-Action_M2A/pilot/README.md
+- Company_SOPs/Meeting-to-Action_M2A/pilot/configs/models.local.yaml
+- Company_SOPs/Meeting-to-Action_M2A/pilot/configs/pipeline.yaml
+- Company_SOPs/Meeting-to-Action_M2A/pilot/configs/privacy.yaml
+- Company_SOPs/Meeting-to-Action_M2A/pilot/configs/routing.yaml
+- Company_SOPs/Meeting-to-Action_M2A/pilot/data/input/.gitkeep
+- Company_SOPs/Meeting-to-Action_M2A/pilot/data/input/transcript1.md\n
+
+**Commits:** 030b16b Session: clarify AiFirst tax structure; add Spain public-sector procurement research (glossary, plan, log, primer, checklist, requirements guide); add bilingual structure risk disclosure; add royalty tax model + CLI calculator; add Notion sync script; update NHR as optional; session artifacts updated
+
+---
+
+## 2025-11-10 23:50:40 UTC - Codex CLI
+
+Commits this session:\n- 030b16b Session: clarify AiFirst tax structure; add Spain public-sector procurement research (glossary, plan, log, primer, checklist, requirements guide); add bilingual structure risk disclosure; add royalty tax model + CLI calculator; add Notion sync script; update NHR as optional; session artifacts updated
+- 925f0d8 Conventions: unify naming + references; centralize style guide; add linter/fixer + hooks; GTM/Legal renames; tailored READMEs
+- 66c9277 Agents: transcript export default ON; new_dir scaffolding + templates; hooks warnings; validation runner
+- 0d6de58 Simplify agent files and add session infrastructure
+- 62c6b8c Add credential/PII checks to agent instruction files\nTouched files:\n- .agents/changelog.md
+- .agents/context.yaml
+- .agents/handoff.md
+- .claude/agents/case-study-extractor.md
+- .claude/agents/legal-compliance-auditor.md
+- .githooks/pre-commit
+- .github/PULL_REQUEST_TEMPLATE.md
+- .gitignore
+- AGENTS.md
+- CLAUDE.md
+- Company_SOPs/Meeting-to-Action_M2A/.ai/README.md
+- Company_SOPs/Meeting-to-Action_M2A/PROCESS_SPEC.md
+- Company_SOPs/Meeting-to-Action_M2A/README.md
+- Company_SOPs/Meeting-to-Action_M2A/pilot/README.md
+- Company_SOPs/Meeting-to-Action_M2A/pilot/configs/models.local.yaml
+- Company_SOPs/Meeting-to-Action_M2A/pilot/configs/pipeline.yaml
+- Company_SOPs/Meeting-to-Action_M2A/pilot/configs/privacy.yaml
+- Company_SOPs/Meeting-to-Action_M2A/pilot/configs/routing.yaml
+- Company_SOPs/Meeting-to-Action_M2A/pilot/data/input/.gitkeep
+- Company_SOPs/Meeting-to-Action_M2A/pilot/data/input/transcript1.md\n
+
+**Commits:** 030b16b Session: clarify AiFirst tax structure; add Spain public-sector procurement research (glossary, plan, log, primer, checklist, requirements guide); add bilingual structure risk disclosure; add royalty tax model + CLI calculator; add Notion sync script; update NHR as optional; session artifacts updated
+
+---
+
+## 2025-11-10 23:43:46 UTC - Codex CLI
+
+No commits detected this session
+
+**Commits:** 030b16b Session: clarify AiFirst tax structure; add Spain public-sector procurement research (glossary, plan, log, primer, checklist, requirements guide); add bilingual structure risk disclosure; add royalty tax model + CLI calculator; add Notion sync script; update NHR as optional; session artifacts updated
+
+---
+
+## 2025-11-10 23:38:08 UTC - Codex CLI
+
+No commits detected this session
+
+**Commits:** 030b16b Session: clarify AiFirst tax structure; add Spain public-sector procurement research (glossary, plan, log, primer, checklist, requirements guide); add bilingual structure risk disclosure; add royalty tax model + CLI calculator; add Notion sync script; update NHR as optional; session artifacts updated
+
+---
+
 ## 2025-11-10 23:31:27 UTC - Codex CLI
 
 Session Summary: Clarified corporate structure; added Structure Snapshot, Spain residency, IP HoldCo decision matrix; made NHR optional and cross-linked. Created Spain procurement research workspace (glossary, plan, log with authoritative URLs, primer, checklist). Wrote comprehensive Requirements Guide, bilingual Structure Risk Disclosure, royalty tax model + Python calculator. Built Notion sync script; MCP Notion not detected in this environment.

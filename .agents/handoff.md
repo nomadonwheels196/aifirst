@@ -1,15 +1,45 @@
 # Agent Handoff Notes
 
-**Last Session:** 2025-11-10 23:31:27 UTC
-**Agent:** Codex CLI
+**Last Session:** 2025-11-12 10:17:17 UTC
+**Agent:** Claude Code
 
 ## Session Summary
 
-Session Summary: Clarified corporate structure; added Structure Snapshot, Spain residency, IP HoldCo decision matrix; made NHR optional and cross-linked. Created Spain procurement research workspace (glossary, plan, log with authoritative URLs, primer, checklist). Wrote comprehensive Requirements Guide, bilingual Structure Risk Disclosure, royalty tax model + Python calculator. Built Notion sync script; MCP Notion not detected in this environment.
+Session Summary: Fixed session protocol documentation; archived and replaced Business_Spec with latest version.
+
+Problems → Solutions:
+- Missing "On Start" instruction in /Users/travis/CLAUDE.md → Added explicit session-open command with ⚠️ warning
+- Outdated Business_Spec needed replacement → Archived to /Users/travis/Archive/Work/aifirst/Business_Spec_2025-11-12/ and copied new version from Downloads
+
+Key Decisions:
+- Standardized archive process: Use /Users/travis/Archive/Work/aifirst/ with timestamped subfolders (<FolderName>_YYYY-MM-DD)
+- Session protocol now clearly states session-open must run at start of EVERY session
+
+Files Touched:
+- /Users/travis/CLAUDE.md (added session-open instruction)
+- /Users/travis/Work/Ai_First/Business_Spec/ (all files replaced with new version)
+- /Users/travis/Archive/Work/aifirst/Business_Spec_2025-11-12/ (created, contains old version)
+
+Note: Transcript export not performed - Claude Code currently lacks conversation history export capability.
 
 ## What Was Done
 
-Session Summary: Clarified corporate structure; added Structure Snapshot, Spain residency, IP HoldCo decision matrix; made NHR optional and cross-linked. Created Spain procurement research workspace (glossary, plan, log with authoritative URLs, primer, checklist). Wrote comprehensive Requirements Guide, bilingual Structure Risk Disclosure, royalty tax model + Python calculator. Built Notion sync script; MCP Notion not detected in this environment.
+Session Summary: Fixed session protocol documentation; archived and replaced Business_Spec with latest version.
+
+Problems → Solutions:
+- Missing "On Start" instruction in /Users/travis/CLAUDE.md → Added explicit session-open command with ⚠️ warning
+- Outdated Business_Spec needed replacement → Archived to /Users/travis/Archive/Work/aifirst/Business_Spec_2025-11-12/ and copied new version from Downloads
+
+Key Decisions:
+- Standardized archive process: Use /Users/travis/Archive/Work/aifirst/ with timestamped subfolders (<FolderName>_YYYY-MM-DD)
+- Session protocol now clearly states session-open must run at start of EVERY session
+
+Files Touched:
+- /Users/travis/CLAUDE.md (added session-open instruction)
+- /Users/travis/Work/Ai_First/Business_Spec/ (all files replaced with new version)
+- /Users/travis/Archive/Work/aifirst/Business_Spec_2025-11-12/ (created, contains old version)
+
+Note: Transcript export not performed - Claude Code currently lacks conversation history export capability.
 
 ## Git Activity
 
@@ -17,7 +47,7 @@ No commits this session
 
 ## Current State
 
-- Last Updated: 2025-11-09
+- Last Updated: 2025-11-10
 - Status: active
 - Last Agent/Owner: Codex CLI
 

@@ -12,7 +12,7 @@
 
 ## Purpose
 
-The Core Company Spec defines how Ai First operates, why it exists, and what success means.
+The Core Company Spec defines how Ai First operates, why we, as an organization, exist, and what success means.
 
 It is the **single source of truth** that aligns mission, product, culture, and execution.
 
@@ -29,7 +29,7 @@ This spec is a **living document** and will evolve as the company grows.
 
 - Every major decision should map back to this spec
 - If something is unclear or changed by reality, we update the spec
-- If a proposal or initiative **cannot be justified through the Core Spec**, it should not move forward
+- If a proposal or initiative **cannot be justified through the Business Spec**, it should not move forward
 - This spec ensures that **clarity replaces politics** and **purpose replaces noise**
 
 ## Structure

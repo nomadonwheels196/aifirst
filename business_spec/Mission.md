@@ -1,7 +1,5 @@
 # Mission
 
-# Mission
-
 **Version:** v1.0
 
 **Owner:** Travis Sheppard
@@ -12,23 +10,19 @@
 
 ## Mission Statement
 
+**Your personal Ai coach — empowering your people to build the future of work from the inside out.**
+
 **Turn Ai investment into human capability** — **and measurable ROI** by **changing the way people think and work with Ai.** 
 
-**Technology alone doesn’t drive progress—adoption does!**
-
-Ai has the power to lift humanity, but only if people understand how to use it. Without that, Ai creates division instead of opportunity. You can’t redistribute wealth easily. But you can redistribute capability.
-
-**Ai First exists to empower people** (not replace them) by building the infrastructure to teach them how to use Ai *inside their actual work and daily lives*— through *live, context-aware **software coaching*** that **reshapes habits and boosts capability**.
-
-*The next competitive advantage isn’t in coding*. **It’s in effectively communicating with Ai** to get to the next level! That's why we are building **the operating system for human-Ai productivity!**
+The biggest barrier to AI value today isn’t technology — it’s distance.  Executives make strategy from above while the real insights live in the trenches.  By **giving every employee an Ai partner**, Ai First bridges that gap — turning daily work into a continuous loop of improvement, innovation, and measurable ROI.
 
 ## Why We Exist
 
-**Technology alone doesn’t drive progress—adoption does!**
-
 Ai has the power to lift humanity, but only if people understand how to use it. Without that, Ai creates division instead of opportunity. You can’t redistribute wealth easily. But you can redistribute capability.
 
-**Ai First exists to empower people** (not replace them) by building the infrastructure to teach them how to use Ai *inside their actual work and daily lives*— through *live, context-aware **software coaching*** that **reshapes habits and boosts capability**.
+**Technology alone doesn’t drive progress—adoption does!**
+
+**Ai First exists to empower people** (not replace them) by building the operating system to teach people how to use Ai *inside our actual work and daily lives*— through *live, context-aware **software coaching*** that **reshapes habits and boosts capability**.
 
 *The next competitive advantage isn’t in coding*. **It’s in effectively communicating with Ai** to get to the next level! That's why we are building **the operating system for human-Ai productivity!**
 

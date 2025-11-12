@@ -1,4 +1,4 @@
-# Boundaries and Gaurdrails
+# Boundaries and Guardrails
 
 **Version:** v1.0
 

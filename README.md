@@ -4,9 +4,9 @@
 Turn AI investment into human capability and measurable ROI by changing the way people think and work with AI. This repository contains company specifications, business documentation, and operational materials for AI First.
 
 ## Current State
-- Last Updated: 2025-11-10
+- Last Updated: 2025-11-12
 - Status: active
-- Last Agent/Owner: Codex CLI
+- Last Agent/Owner: Claude Code
 
 ### Active Work
 - None at the moment

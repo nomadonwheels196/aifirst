@@ -4,7 +4,11 @@
       "WebSearch",
       "SlashCommand(/statusline)",
       "Read(//Users/travis/**)",
-      "Bash(chmod:*)"
+      "Bash(chmod:*)",
+      "Bash(rm:*)",
+      "Bash(tree:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nSession: archive old Business_Spec; replace with updated version; fix session protocol\n\n- Archived old Business_Spec to ~/Archive/Work/aifirst/Business_Spec_2025-11-12/\n- Replaced business_spec/ with latest content from Downloads\n- Updated /Users/travis/CLAUDE.md with explicit session-open instruction\n- Added \"Boundaries and Guardrails.md\" (corrected spelling)\n- Removed \"Ai First Company Spec.md\" and \"Boundaries and Gaurdrails.md\" (typo)\n- Updated Business_Spec content: Framework, Customers, Mission, Product Strategy, etc.\n- Session artifacts updated (.agents/changelog, handoff, context)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []

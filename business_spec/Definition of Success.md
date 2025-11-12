@@ -1,7 +1,5 @@
 # Definition of Success
 
-# Definition of Success
-
 **Version:** v1.0
 
 **Owner:** Travis Sheppard
@@ -12,7 +10,7 @@
 
 | Goal | Target |
 | --- | --- |
-| MVP Live | End of 2025 |
+| MVP Live | End of 2025 / Early 2026 |
 | Product–Market Fit | July 1, 2026 (latest: end of 2026) |
 | ARR | $3M by end of 2026 |
 | ARR | $100M by 2029 |
