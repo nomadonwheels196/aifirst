@@ -1,0 +1,253 @@
+{
+  "name": "Training Content Pipeline - Atlas to Notion",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "training-content",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook-trigger",
+      "name": "Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300],
+      "webhookId": "training-content-webhook"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{$json.body.resource_name}}",
+              "operation": "isNotEmpty"
+            },
+            {
+              "value1": "={{$json.body.file_link}}",
+              "operation": "isNotEmpty"
+            },
+            {
+              "value1": "={{$json.body.key_takeaways}}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "validate-required-fields",
+      "name": "Validate Required Fields",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "databaseId": "29afd07ed1c280c9a8b2f84079570a92",
+        "title": "={{$json.body.resource_name}}",
+        "properties": {
+          "customProperty": [
+            {
+              "key": "File/Link",
+              "urlValue": "={{$json.body.file_link}}"
+            },
+            {
+              "key": "Type",
+              "selectValue": "={{$json.body.type}}"
+            },
+            {
+              "key": "Platform",
+              "selectValue": "={{$json.body.platform}}"
+            },
+            {
+              "key": "Duration (min)",
+              "numberValue": "={{$json.body.duration_minutes}}"
+            },
+            {
+              "key": "Created By",
+              "emailValue": "={{$json.body.created_by || 'atlas-automation@aifirst.com'}}"
+            },
+            {
+              "key": "Tags / Category",
+              "multiSelectValue": "={{$json.body.tags_category}}"
+            },
+            {
+              "key": "Path",
+              "multiSelectValue": "={{$json.body.path}}"
+            },
+            {
+              "key": "Status",
+              "selectValue": "Active"
+            },
+            {
+              "key": "Key Take-Aways",
+              "richTextValue": "={{$json.body.key_takeaways.map(item => '• ' + item).join('\\n')}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "create-notion-entry",
+      "name": "Create Notion Entry",
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2,
+      "position": [650, 200],
+      "credentials": {
+        "notionApi": {
+          "id": "YOUR_NOTION_CREDENTIAL_ID",
+          "name": "Notion API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{$json.body.business_value}}",
+              "value2": "High"
+            }
+          ]
+        }
+      },
+      "id": "check-high-value",
+      "name": "Check If High Value",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [850, 200]
+    },
+    {
+      "parameters": {
+        "channel": "#training-updates",
+        "text": "=🎓 New High-Value Training Added!\n\n*{{$json.body.resource_name}}*\n\n📋 Key Takeaways:\n{{$json.body.key_takeaways.map(item => '• ' + item).join('\\n')}}\n\n👥 Recommended for: {{$json.body.path.join(', ')}}\n\n🔗 <{{$json.body.file_link}}|Watch Now> | <https://notion.so/29afd07ed1c280c9a8b2f84079570a92|View Training Library>",
+        "otherOptions": {}
+      },
+      "id": "notify-slack",
+      "name": "Notify Slack",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2,
+      "position": [1050, 100],
+      "credentials": {
+        "slackApi": {
+          "id": "YOUR_SLACK_CREDENTIAL_ID",
+          "name": "Slack API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={\"success\": true, \"message\": \"Training content added successfully!\", \"notion_url\": \"https://notion.so/{{$node['Create Notion Entry'].json.id}}\", \"resource_name\": \"{{$json.body.resource_name}}\"}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "success-response",
+      "name": "Success Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1050, 200]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={\"success\": false, \"message\": \"Missing required fields: resource_name, file_link, or key_takeaways\", \"received_data\": {{JSON.stringify($json.body)}}}",
+        "options": {
+          "responseCode": 400
+        }
+      },
+      "id": "validation-error-response",
+      "name": "Validation Error Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [650, 400]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={\"success\": false, \"message\": \"Error creating Notion entry\", \"error\": \"{{$json.error}}\"}",
+        "options": {
+          "responseCode": 500
+        }
+      },
+      "id": "notion-error-response",
+      "name": "Notion Error Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [850, 400]
+    }
+  ],
+  "connections": {
+    "Webhook Trigger": {
+      "main": [
+        [
+          {
+            "node": "Validate Required Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Required Fields": {
+      "main": [
+        [
+          {
+            "node": "Create Notion Entry",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Validation Error Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Notion Entry": {
+      "main": [
+        [
+          {
+            "node": "Check If High Value",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check If High Value": {
+      "main": [
+        [
+          {
+            "node": "Notify Slack",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Success Response",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Success Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2025-11-14T12:22:00.000Z",
+  "versionId": "1"
+}

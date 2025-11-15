@@ -1,0 +1,47 @@
+{
+  "resource_name": "From Idea to $650M Exit: Lessons in Building AI Startups",
+  "file_link": "https://www.youtube.com/watch?v=l0h3nAW13ao",
+  "platform": "YouTube",
+  "source_organization": "Y Combinator",
+  "duration_minutes": 39,
+  "release_date": "2025-10-28",
+  "type": "Video",
+  "tags_category": ["AI Literacy", "Strategy", "Cultural Impact", "Tools", "Communication"],
+  "path": ["All Roles", "CEO", "CTO", "COS", "R&D", "SA", "AE", "Growth & CX", "Platform Eng"],
+  "skill_level": "Intermediate",
+  "key_takeaways": [
+    "Learn to evaluate AI startup ideas by validating painful customer workflows before writing code.",
+    "Implement reliability practices—evals, testing, guardrails—so AI features become trusted tools, not demos.",
+    "Build customer trust by delivering consistent value and proving outcomes with real-world metrics.",
+    "Design products around workflow depth, not breadth, so AI integrates into existing habits and routines.",
+    "Develop pricing strategies that tie AI value to measurable ROI rather than generic per-seat models."
+  ],
+  "relevance_to_ai_first": "This video aligns tightly with Ai First’s mission by emphasizing reliability, trust-building, workflow-integrated design, and the behavioral realities of AI adoption. The speaker focuses on designing AI tools that truly change how people work, not just showcasing demos—directly reinforcing our coaching-based approach to habit formation, measurable impact, and human-Ai productivity. The principles around evals, trust, and value validation directly support our product philosophy.",
+  "problem_category": ["AI Literacy", "Strategic Planning", "Team Collaboration", "Innovation"],
+  "business_value": "High",
+  "transcript_outline": {
+    "00:00": "Introduction — Background of Casetext, the $650M acquisition story.",
+    "01:00": "Picking the Right Idea — Identifying real workflow pain points in the AI era.",
+    "04:45": "Three Types of AI Startups — Assist, Replace, or Do the Unthinkable.",
+    "09:25": "Reliable AI Products — Moving from cool demos to trustworthy execution.",
+    "16:30": "Evals and Testing — How to measure and ensure model performance.",
+    "24:20": "Why Product Quality Wins — Importance of trust over hype.",
+    "26:00": "Pricing & Selling AI — How AI value should be monetized.",
+    "27:45": "Building Customer Trust — Earning credibility through consistency.",
+    "29:30": "Product Beyond the Pixels — The ecosystem around the AI interface.",
+    "33:00": "Founder Focus — What really matters when building AI products.",
+    "36:00": "Q&A — Market selection, defensibility, and focus."
+  },
+  "suggested_notes_template": [
+    "1. Key Insights from the Talk",
+    "2. Ideas Relevant to Ai First's Product Strategy",
+    "3. Behavioral Change & Adoption Lessons",
+    "4. Reliability + Evals Takeaways",
+    "5. Action Items / Implementation Opportunities"
+  ],
+  "recommended_followup": [
+    "Search: 'AI product reliability best practices'",
+    "Search: 'Y Combinator AI Startup School – reliability + evals'",
+    "Topic: 'Designing workflow-integrated AI assistants'"
+  ]
+}

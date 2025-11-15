@@ -1,0 +1,45 @@
+{
+  "resource_name": "I Learned AI from Zero in 90 Days (Here's EXACTLY What Worked)",
+  "file_link": "https://youtu.be/eV4dxNYUwBk?si=3iYWzhrEpKKy0fWo",
+  "platform": "YouTube",
+  "source_organization": "AI Master",
+  "duration_minutes": 16.5,
+  "release_date": "2025-10-10",
+  "type": "Video",
+  "tags_category": ["AI Literacy", "Tools", "Strategy", "Communication"],
+  "path": ["All Roles", "Growth & CX", "R&D", "Sales", "SA", "AE", "Dev", "Security", "Tech", "Platform Eng", "CS", "CTO", "COS", "CEO"],
+  "skill_level": "Beginner",
+  "key_takeaways": [
+    "Learn to apply the 'AI Trinity' framework to choose the right tool (ChatGPT, Claude, Gemini) for the right task inside real workflows.",
+    "Implement a structured prompting system (Role, Context, Task, Constraints, Format) to increase output quality and predictability.",
+    "Build simple no-code automations that reduce manual workload by identifying 15–30 minute recurring tasks.",
+    "Use AI to analyze documents, write content, and perform real-time research with tool-specific strengths.",
+    "Design a personal AI learning plan that compounds weekly skill growth instead of relying on ad-hoc usage."
+  ],
+  "relevance_to_ai_first": "This video aligns closely with Ai First’s mission by emphasizing practical, tool-agnostic behavioral adoption rather than technical depth. It provides clear frameworks for building habits, selecting the right AI tool for a situation, and developing user confidence—key for our coaching engine. The content reinforces the value of structured prompting, contextual use cases, and workflow-level transformation, which map directly to Ai First’s learning paths and behavior-change model.",
+  "problem_category": ["AI Literacy", "Strategic Planning", "Team Collaboration", "Innovation", "Time Management"],
+  "business_value": "High",
+  "transcript_outline": {
+    "0:00": "Hook — Why most people fail with AI",
+    "0:58": "The AI Trinity (ChatGPT, Claude, Gemini)",
+    "1:15": "The Problem-Solving Powerhouse",
+    "3:00": "The Writing & Analysis Master",
+    "4:21": "Best AI Search Engine",
+    "7:22": "Building Real AI Automations",
+    "9:23": "Advanced Strategies",
+    "13:33": "Common Mistakes to Avoid",
+    "15:16": "Action & Implementation Plan"
+  },
+  "suggested_notes_template": [
+    "1. Key Frameworks & Mental Models",
+    "2. Tool Strengths & Best Use Cases",
+    "3. Prompting Strategies to Reuse",
+    "4. Automation Ideas to Implement",
+    "5. Personal Adoption Plan & Next Steps"
+  ],
+  "recommended_followup": [
+    "Search: 'behavioral design for AI adoption'",
+    "Search: 'workflow automation ideas for knowledge workers'",
+    "Topic: 'Claude vs ChatGPT vs Gemini advanced comparison for enterprise workflows'"
+  ]
+}

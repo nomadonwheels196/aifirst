@@ -20,7 +20,8 @@
       "mcp__notion__API-patch-block-children",
       "mcp__notion__API-update-a-block",
       "Bash(find:*)",
-      "Bash(make:*)"
+      "Bash(make:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nSession: Reorganize root directories and centralize utilities\n\n## Directory Reorganization\n\n**Root cleanup - moved operational directories to functional areas:**\n- data/, payloads/ → Biz_Ops/Company_SOPs/Meeting-to-Action_M2A/\n- scripts/ → Biz_Ops/IT/scripts/\n- tools/ → Biz_Ops/IT/tools/\n- Makefile → ~/.agents/Makefile\n\n**Purpose:**\n- Clean root directory (keep only cross-functional content)\n- Co-locate M2A pipeline artifacts with process spec\n- Centralize repo utilities under IT ownership\n- Share Makefile across all projects via ~/.agents/\n\n## Reference Updates\n\n**Updated 72+ files with new paths:**\n- All `scripts/new_dir.sh` → `Biz_Ops/IT/scripts/new_dir.sh`\n- Updated notion_sync_page.py self-reference\n- Updated regen_readmes.py template\n- Updated agent validation scripts\n- Updated CLAUDE.md with make lint/fix instructions\n\n**Makefile improvements:**\n- Added DIR parameter support for multi-project use\n- Updated usage docs in CLAUDE.md\n\n## Impact\n\n- Root directory now clean and well-organized\n- Clear separation of concerns (operational vs content)\n- Reusable utilities across all projects\n- Consistent naming convention enforcement\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []
